@@ -62,8 +62,8 @@ if [ "$m1" == "$m2" ] ; then
     fi
 else 
     OBJDUMP="powerpc-linux-gnu-objdump -D -EB -mpowerpc"
-    $OBJDUMP ./check/src/CSimsApp.s.o > $2.current.dump
-    $OBJDUMP ./check/asm/CSimsApp.s.o > $2.baserom.dump
+    $OBJDUMP ./check/src/$2.s.o > $2.current.dump
+    $OBJDUMP ./check/asm/$2.s.o > $2.baserom.dump
     diff $OBJDUMP_DIFF_OPTIONS -u --color=never $2.baserom.dump $2.current.dump > ./check/$2.diff
     echo "NOT MATCHING. See ./check/$2.diff"
 fi
