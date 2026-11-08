@@ -14300,8 +14300,8 @@ lbl_100AB410:
 /* 100AB428 000AB428  7C 89 03 A6 */	mtctr r4
 /* 100AB42C 000AB42C  4E 80 04 20 */	bctr 
 
-.global sub_100AB430
-sub_100AB430:
+# fake split (inside .GetNeighborData__12NeighborhoodFssPPs)
+lbl_100AB430:
 /* 100AB430 000AB430  80 07 00 8C */	lwz r0, 0x8c(r7)
 /* 100AB434 000AB434  39 00 00 00 */	li r8, 0
 /* 100AB438 000AB438  80 67 00 90 */	lwz r3, 0x90(r7)

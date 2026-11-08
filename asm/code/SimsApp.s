@@ -832,8 +832,8 @@ lbl_10242D38:
 /* 10242D4C 00242D4C  7C 69 03 A6 */	mtctr r3
 /* 10242D50 00242D50  4E 80 04 20 */	bctr 
 
-.global sub_10242D54
-sub_10242D54:
+# fake split (inside .CreateTaxiDialog__8cSimsAppFQ28cSimsApp15eTransitScreens)
+lbl_10242D54:
 /* 10242D54 00242D54  3B 80 15 30 */	li r28, 0x1530
 /* 10242D58 00242D58  3B A0 15 31 */	li r29, 0x1531
 /* 10242D5C 00242D5C  48 00 00 54 */	b lbl_10242DB0
@@ -3602,8 +3602,8 @@ lbl_10245A60:
 /* 10245A74 00245A74  7C 69 03 A6 */	mtctr r3
 /* 10245A78 00245A78  4E 80 04 20 */	bctr 
 
-.global sub_10245A7C
-sub_10245A7C:
+# fake split (inside .AppCheatCallback__FP17cCheatCommandLineUl)
+lbl_10245A7C:
 /* 10245A7C 00245A7C  4B FF 55 95 */	bl "GetSelected__12PersonFinderFv"
 /* 10245A80 00245A80  2C 03 FF FF */	cmpwi r3, -1
 /* 10245A84 00245A84  40 82 00 24 */	bne lbl_10245AA8
@@ -6193,7 +6193,7 @@ lbl_10247FB4:
 .global "GetDepthFromColorType__18cTSBufferColorTypeCFQ218cTSBufferColorType10eColorType"
 "GetDepthFromColorType__18cTSBufferColorTypeCFQ218cTSBufferColorType10eColorType":
 /* 10248010 00248010  28 04 00 0A */	cmplwi r4, 0xa
-/* 10248014 00248014  41 81 00 38 */	bgt sub_1024804C
+/* 10248014 00248014  41 81 00 38 */	bgt lbl_1024804C
 /* 10248018 00248018  80 62 AE 64 */	lwz r3, lbl_105BC2C4-_R2_BASE_(r2)
 /* 1024801C 0024801C  54 80 10 3A */	slwi r0, r4, 2
 /* 10248020 00248020  7C 63 00 2E */	lwzx r3, r3, r0
@@ -6212,8 +6212,8 @@ lbl_10248044:
 /* 10248044 00248044  38 60 00 10 */	li r3, 0x10
 /* 10248048 00248048  4E 80 00 20 */	blr 
 
-.global sub_1024804C
-sub_1024804C:
+# fake split (inside .GetDepthFromColorType__18cTSBufferColorTypeCFQ218cTSBufferColorType10eColorType)
+lbl_1024804C:
 /* 1024804C 0024804C  38 60 00 00 */	li r3, 0
 /* 10248050 00248050  4E 80 00 20 */	blr 
 

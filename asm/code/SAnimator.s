@@ -3786,15 +3786,15 @@ lbl_1034CE28:
 lbl_1034CE58:
 /* 1034CE58 0034CE58  28 03 00 0B */	cmplwi r3, 0xb
 /* 1034CE5C 0034CE5C  54 A5 06 3E */	clrlwi r5, r5, 0x18
-/* 1034CE60 0034CE60  41 81 00 18 */	bgt sub_1034CE78
+/* 1034CE60 0034CE60  41 81 00 18 */	bgt lbl_1034CE78
 /* 1034CE64 0034CE64  80 82 B4 3C */	lwz r4, lbl_105BC89C-_R2_BASE_(r2)
 /* 1034CE68 0034CE68  54 60 10 3A */	slwi r0, r3, 2
 /* 1034CE6C 0034CE6C  7C 84 00 2E */	lwzx r4, r4, r0
 /* 1034CE70 0034CE70  7C 89 03 A6 */	mtctr r4
 /* 1034CE74 0034CE74  4E 80 04 20 */	bctr 
 
-.global sub_1034CE78
-sub_1034CE78:
+# fake split (inside .HandleVitaBoyAnimEvent__9SAnimatorFP8PracticeP4BoneP6MotionP5Propsf)
+lbl_1034CE78:
 /* 1034CE78 0034CE78  80 7D 00 00 */	lwz r3, 0(r29)
 /* 1034CE7C 0034CE7C  38 00 00 00 */	li r0, 0
 /* 1034CE80 0034CE80  80 63 00 1C */	lwz r3, 0x1c(r3)
@@ -6129,8 +6129,8 @@ lbl_1034F22C:
 /* 1034F244 0034F244  7C 69 03 A6 */	mtctr r3
 /* 1034F248 0034F248  4E 80 04 20 */	bctr 
 
-.global sub_1034F24C
-sub_1034F24C:
+# fake split (inside .Tick__9SAnimatorFb)
+lbl_1034F24C:
 /* 1034F24C 0034F24C  88 0F 02 94 */	lbz r0, 0x294(r15)
 /* 1034F250 0034F250  28 00 00 00 */	cmplwi r0, 0
 /* 1034F254 0034F254  41 82 1F F0 */	beq lbl_10351244
@@ -6475,8 +6475,8 @@ lbl_1034F69C:
 /* 1034F718 0034F718  7C 69 03 A6 */	mtctr r3
 /* 1034F71C 0034F71C  4E 80 04 20 */	bctr 
 
-.global sub_1034F720
-sub_1034F720:
+# fake split (inside .Tick__9SAnimatorFb)
+lbl_1034F720:
 /* 1034F720 0034F720  39 A0 00 0F */	li r13, 0xf
 /* 1034F724 0034F724  48 00 00 38 */	b lbl_1034F75C
 lbl_1034F728:
@@ -9603,15 +9603,15 @@ lbl_103525C4:
 /* 103525D4 003525D4  80 7E 01 30 */	lwz r3, 0x130(r30)
 /* 103525D8 003525D8  A8 03 05 B6 */	lha r0, 0x5b6(r3)
 /* 103525DC 003525DC  90 1E 01 AC */	stw r0, 0x1ac(r30)
-/* 103525E0 003525E0  41 81 00 18 */	bgt sub_103525F8
+/* 103525E0 003525E0  41 81 00 18 */	bgt lbl_103525F8
 /* 103525E4 003525E4  80 62 B4 20 */	lwz r3, lbl_105BC880-_R2_BASE_(r2)
 /* 103525E8 003525E8  54 80 10 3A */	slwi r0, r4, 2
 /* 103525EC 003525EC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 103525F0 003525F0  7C 69 03 A6 */	mtctr r3
 /* 103525F4 003525F4  4E 80 04 20 */	bctr 
 
-.global sub_103525F8
-sub_103525F8:
+# fake split (inside .UpdateOutfitAndHands__9SAnimatorFb)
+lbl_103525F8:
 /* 103525F8 003525F8  80 7E 02 78 */	lwz r3, 0x278(r30)
 /* 103525FC 003525FC  38 BF 1A 28 */	addi r5, r31, 0x1a28
 /* 10352600 00352600  38 DF 1B 34 */	addi r6, r31, 0x1b34

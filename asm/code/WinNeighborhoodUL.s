@@ -869,8 +869,8 @@ lbl_104599D4:
 /* 104599E8 004599E8  7C 69 03 A6 */	mtctr r3
 /* 104599EC 004599EC  4E 80 04 20 */	bctr 
 
-.global sub_104599F0
-sub_104599F0:
+# fake split (inside .ProcessFilterToolbar__18cWinNeighborhoodULFi)
+lbl_104599F0:
 /* 104599F0 004599F0  38 7E 00 00 */	addi r3, r30, 0
 /* 104599F4 004599F4  38 80 00 10 */	li r4, 0x10
 /* 104599F8 004599F8  48 00 07 C9 */	bl "SetFilterMode__18cWinNeighborhoodULFi"
@@ -975,8 +975,8 @@ lbl_10459B88:
 /* 10459B9C 00459B9C  7C 69 03 A6 */	mtctr r3
 /* 10459BA0 00459BA0  4E 80 04 20 */	bctr 
 
-.global sub_10459BA4
-sub_10459BA4:
+# fake split (inside .BuildFilterToolbar__18cWinNeighborhoodULFv)
+lbl_10459BA4:
 /* 10459BA4 00459BA4  38 81 00 40 */	addi r4, r1, 0x40
 /* 10459BA8 00459BA8  38 60 13 C8 */	li r3, 0x13c8
 /* 10459BAC 00459BAC  38 A0 00 04 */	li r5, 4
@@ -3148,8 +3148,8 @@ lbl_1045BDF0:
 /* 1045BE00 0045BE00  4B FF E3 C1 */	bl "SetFilterMode__18cWinNeighborhoodULFi"
 /* 1045BE04 0045BE04  48 00 00 78 */	b lbl_1045BE7C
 
-.global sub_1045BE08
-sub_1045BE08:
+# fake split (inside .TSOnKeyDown__18cWinNeighborhoodULFUlUl)
+lbl_1045BE08:
 /* 1045BE08 0045BE08  80 1F 00 CC */	lwz r0, 0xcc(r31)
 /* 1045BE0C 0045BE0C  2C 00 00 03 */	cmpwi r0, 3
 /* 1045BE10 0045BE10  41 82 00 54 */	beq lbl_1045BE64
@@ -4943,8 +4943,8 @@ lbl_1045D88C:
 /* 1045D930 0045D930  7C A9 03 A6 */	mtctr r5
 /* 1045D934 0045D934  4E 80 04 20 */	bctr 
 
-.global sub_1045D938
-sub_1045D938:
+# fake split (inside .RezoneModeBtnHandler__18cWinNeighborhoodULFi)
+lbl_1045D938:
 /* 1045D938 0045D938  38 80 00 00 */	li r4, 0
 /* 1045D93C 0045D93C  4B FF F4 C5 */	bl "SetMode__18cWinNeighborhoodULFQ216cWinNeighborhood4Mode"
 /* 1045D940 0045D940  38 7E 00 00 */	addi r3, r30, 0
@@ -4987,8 +4987,8 @@ lbl_1045D970:
 /* 1045DA00 0045DA00  7C A9 03 A6 */	mtctr r5
 /* 1045DA04 0045DA04  4E 80 04 20 */	bctr 
 
-.global sub_1045DA08
-sub_1045DA08:
+# fake split (inside .EvictModeBtnHandler__18cWinNeighborhoodULFi)
+lbl_1045DA08:
 /* 1045DA08 0045DA08  38 80 00 00 */	li r4, 0
 /* 1045DA0C 0045DA0C  4B FF F3 F5 */	bl "SetMode__18cWinNeighborhoodULFQ216cWinNeighborhood4Mode"
 /* 1045DA10 0045DA10  38 7E 00 00 */	addi r3, r30, 0
@@ -7100,8 +7100,8 @@ lbl_1045F9A4:
 /* 1045FABC 0045FABC  7C A9 03 A6 */	mtctr r5
 /* 1045FAC0 0045FAC0  4E 80 04 20 */	bctr 
 
-.global sub_1045FAC4
-sub_1045FAC4:
+# fake split (inside .RegularModeBtnHandler__18cWinNeighborhoodULFi)
+lbl_1045FAC4:
 /* 1045FAC4 0045FAC4  88 02 1F B9 */	lbz r0, lbl_105C3419-_R2_BASE_(r2)
 /* 1045FAC8 0045FAC8  28 00 00 00 */	cmplwi r0, 0
 /* 1045FACC 0045FACC  40 82 06 50 */	bne lbl_1046011C
@@ -10264,7 +10264,7 @@ lbl_10462B50:
 /* 10462B54 00462B54  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 10462B58 00462B58  7C 00 07 74 */	extsb r0, r0
 /* 10462B5C 00462B5C  28 00 00 0F */	cmplwi r0, 0xf
-/* 10462B60 00462B60  41 81 00 48 */	bgt sub_10462BA8
+/* 10462B60 00462B60  41 81 00 48 */	bgt lbl_10462BA8
 /* 10462B64 00462B64  80 62 B8 7C */	lwz r3, lbl_105BCCDC-_R2_BASE_(r2)
 /* 10462B68 00462B68  54 00 10 3A */	slwi r0, r0, 2
 /* 10462B6C 00462B6C  7C 63 00 2E */	lwzx r3, r3, r0
@@ -10287,8 +10287,8 @@ lbl_10462B9C:
 /* 10462BA0 00462BA0  90 1B 00 10 */	stw r0, 0x10(r27)
 /* 10462BA4 00462BA4  48 00 00 0C */	b lbl_10462BB0
 
-.global sub_10462BA8
-sub_10462BA8:
+# fake split (inside .Init__18cWinNeighborhoodULFv)
+lbl_10462BA8:
 /* 10462BA8 00462BA8  38 00 14 C3 */	li r0, 0x14c3
 /* 10462BAC 00462BAC  90 1B 00 10 */	stw r0, 0x10(r27)
 lbl_10462BB0:
@@ -10762,7 +10762,7 @@ lbl_10463254:
 /* 10463298 00463298  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 1046329C 0046329C  7C 00 07 74 */	extsb r0, r0
 /* 104632A0 004632A0  28 00 00 0F */	cmplwi r0, 0xf
-/* 104632A4 004632A4  41 81 00 68 */	bgt sub_1046330C
+/* 104632A4 004632A4  41 81 00 68 */	bgt lbl_1046330C
 /* 104632A8 004632A8  80 62 B8 78 */	lwz r3, lbl_105BCCD8-_R2_BASE_(r2)
 /* 104632AC 004632AC  54 00 10 3A */	slwi r0, r0, 2
 /* 104632B0 004632B0  7C 63 00 2E */	lwzx r3, r3, r0
@@ -10793,8 +10793,8 @@ lbl_104632F8:
 /* 10463304 00463304  90 1B 00 24 */	stw r0, 0x24(r27)
 /* 10463308 00463308  48 00 00 14 */	b lbl_1046331C
 
-.global sub_1046330C
-sub_1046330C:
+# fake split (inside .Init__18cWinNeighborhoodULFv)
+lbl_1046330C:
 /* 1046330C 0046330C  38 60 14 C3 */	li r3, 0x14c3
 /* 10463310 00463310  38 00 15 2D */	li r0, 0x152d
 /* 10463314 00463314  90 7B 00 10 */	stw r3, 0x10(r27)

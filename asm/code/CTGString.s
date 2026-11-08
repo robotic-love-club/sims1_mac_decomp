@@ -324,8 +324,8 @@ lbl_10567DA8:
 /* 10567DAC 00567DAC  90 01 00 40 */	stw r0, 0x40(r1)
 /* 10567DB0 00567DB0  48 00 00 68 */	b lbl_10567E18
 
-.global sub_10567DB4
-sub_10567DB4:
+# fake split (inside .SprintfV__9CTGStringFPCcPc)
+lbl_10567DB4:
 /* 10567DB4 00567DB4  7C 1D F2 14 */	add r0, r29, r30
 /* 10567DB8 00567DB8  38 61 00 40 */	addi r3, r1, 0x40
 /* 10567DBC 00567DBC  38 80 00 80 */	li r4, 0x80

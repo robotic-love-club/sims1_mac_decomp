@@ -600,8 +600,8 @@ lbl_100FA654:
 /* 100FA6C4 000FA6C4  7C A9 03 A6 */	mtctr r5
 /* 100FA6C8 000FA6C8  4E 80 04 20 */	bctr 
 
-.global sub_100FA6CC
-sub_100FA6CC:
+# fake split (inside .GetCatalogRating__11ObjSelectorFi)
+lbl_100FA6CC:
 /* 100FA6CC 000FA6CC  80 63 00 60 */	lwz r3, 0x60(r3)
 /* 100FA6D0 000FA6D0  A8 63 00 A4 */	lha r3, 0xa4(r3)
 /* 100FA6D4 000FA6D4  4E 80 00 20 */	blr 

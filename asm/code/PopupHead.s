@@ -537,8 +537,8 @@ lbl_101111CC:
 /* 101111E0 001111E0  7C 69 03 A6 */	mtctr r3
 /* 101111E4 001111E4  4E 80 04 20 */	bctr 
 
-.global sub_101111E8
-sub_101111E8:
+# fake split (inside .Render__9PopupHeadFP11RenderParam)
+lbl_101111E8:
 /* 101111E8 001111E8  C0 2F 00 5C */	lfs f1, 0x5c(r15)
 /* 101111EC 001111EC  C0 1E 00 2C */	lfs f0, 0x2c(r30)
 /* 101111F0 001111F0  EC 01 00 2A */	fadds f0, f1, f0

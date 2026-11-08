@@ -2769,8 +2769,8 @@ lbl_10237394:
 /* 102373AC 002373AC  7C 89 03 A6 */	mtctr r4
 /* 102373B0 002373B0  4E 80 04 20 */	bctr 
 
-.global sub_102373B4
-sub_102373B4:
+# fake split (inside .GetSkillNeededToAdvance__12PersonFinderFii)
+lbl_102373B4:
 /* 102373B4 002373B4  38 80 00 01 */	li r4, 1
 /* 102373B8 002373B8  48 00 00 34 */	b lbl_102373EC
 lbl_102373BC:

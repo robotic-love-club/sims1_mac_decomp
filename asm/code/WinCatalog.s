@@ -85,8 +85,8 @@ lbl_1025EA58:
 /* 1025EADC 0025EADC  7C 69 03 A6 */	mtctr r3
 /* 1025EAE0 0025EAE0  4E 80 04 20 */	bctr 
 
-.global sub_1025EAE4
-sub_1025EAE4:
+# fake split (inside .UpdateViewFromCPState__11cWinCatalogFP7CPState)
+lbl_1025EAE4:
 /* 1025EAE4 0025EAE4  80 7E 00 98 */	lwz r3, 0x98(r30)
 /* 1025EAE8 0025EAE8  48 00 16 79 */	bl "GetRoomMask__11cWinCatalogFQ27CPState15NewRoomCatalogs"
 /* 1025EAEC 0025EAEC  90 7F 04 68 */	stw r3, 0x468(r31)
@@ -175,8 +175,8 @@ lbl_1025EBF8:
 /* 1025EC10 0025EC10  7C 89 03 A6 */	mtctr r4
 /* 1025EC14 0025EC14  4E 80 04 20 */	bctr 
 
-.global sub_1025EC18
-sub_1025EC18:
+# fake split (inside .UpdateViewFromCPState__11cWinCatalogFP7CPState)
+lbl_1025EC18:
 /* 1025EC18 0025EC18  80 9F 04 68 */	lwz r4, 0x468(r31)
 /* 1025EC1C 0025EC1C  3A 20 00 00 */	li r17, 0
 /* 1025EC20 0025EC20  4B FA 39 B1 */	bl "TestInRoom__7ProductFi"
@@ -533,8 +533,8 @@ lbl_1025F0E8:
 /* 1025F10C 0025F10C  7C 69 03 A6 */	mtctr r3
 /* 1025F110 0025F110  4E 80 04 20 */	bctr 
 
-.global sub_1025F114
-sub_1025F114:
+# fake split (inside .UpdateViewFromCPState__11cWinCatalogFP7CPState)
+lbl_1025F114:
 /* 1025F114 0025F114  7E A3 AB 78 */	mr r3, r21
 /* 1025F118 0025F118  4B FA 34 59 */	bl "HasRoomSort__7ProductFv"
 /* 1025F11C 0025F11C  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -917,8 +917,8 @@ lbl_1025F634:
 /* 1025F66C 0025F66C  7C 69 03 A6 */	mtctr r3
 /* 1025F670 0025F670  4E 80 04 20 */	bctr 
 
-.global sub_1025F674
-sub_1025F674:
+# fake split (inside .UpdateViewFromCPState__11cWinCatalogFP7CPState)
+lbl_1025F674:
 /* 1025F674 0025F674  80 9E 00 9C */	lwz r4, 0x9c(r30)
 /* 1025F678 0025F678  48 00 00 30 */	b lbl_1025F6A8
 lbl_1025F67C:
@@ -1268,8 +1268,8 @@ lbl_1025FBD0:
 /* 1025FC34 0025FC34  7C 89 03 A6 */	mtctr r4
 /* 1025FC38 0025FC38  4E 80 04 20 */	bctr 
 
-.global sub_1025FC3C
-sub_1025FC3C:
+# fake split (inside .GetMagictownMask__11cWinCatalogFQ27CPState20NewMagictownCatalogs)
+lbl_1025FC3C:
 /* 1025FC3C 0025FC3C  38 60 00 01 */	li r3, 1
 /* 1025FC40 0025FC40  4E 80 00 20 */	blr 
 lbl_1025FC44:
@@ -1307,8 +1307,8 @@ lbl_1025FC7C:
 /* 1025FCF4 0025FCF4  7C 89 03 A6 */	mtctr r4
 /* 1025FCF8 0025FCF8  4E 80 04 20 */	bctr 
 
-.global sub_1025FCFC
-sub_1025FCFC:
+# fake split (inside .GetStudiotownMask__11cWinCatalogFQ27CPState21NewStudiotownCatalogs)
+lbl_1025FCFC:
 /* 1025FCFC 0025FCFC  38 60 00 01 */	li r3, 1
 /* 1025FD00 0025FD00  4E 80 00 20 */	blr 
 lbl_1025FD04:
@@ -1346,8 +1346,8 @@ lbl_1025FD3C:
 /* 1025FDB4 0025FDB4  7C 89 03 A6 */	mtctr r4
 /* 1025FDB8 0025FDB8  4E 80 04 20 */	bctr 
 
-.global sub_1025FDBC
-sub_1025FDBC:
+# fake split (inside .GetCommunityMask__11cWinCatalogFQ27CPState20NewCommunityCatalogs)
+lbl_1025FDBC:
 /* 1025FDBC 0025FDBC  38 60 00 01 */	li r3, 1
 /* 1025FDC0 0025FDC0  4E 80 00 20 */	blr 
 lbl_1025FDC4:
@@ -1385,8 +1385,8 @@ lbl_1025FDFC:
 /* 1025FE74 0025FE74  7C 89 03 A6 */	mtctr r4
 /* 1025FE78 0025FE78  4E 80 04 20 */	bctr 
 
-.global sub_1025FE7C
-sub_1025FE7C:
+# fake split (inside .GetVacationMask__11cWinCatalogFQ27CPState19NewVacationCatalogs)
+lbl_1025FE7C:
 /* 1025FE7C 0025FE7C  38 60 00 01 */	li r3, 1
 /* 1025FE80 0025FE80  4E 80 00 20 */	blr 
 lbl_1025FE84:
@@ -1424,8 +1424,8 @@ lbl_1025FEBC:
 /* 1025FF34 0025FF34  7C 89 03 A6 */	mtctr r4
 /* 1025FF38 0025FF38  4E 80 04 20 */	bctr 
 
-.global sub_1025FF3C
-sub_1025FF3C:
+# fake split (inside .GetDowntownMask__11cWinCatalogFQ27CPState19NewDowntownCatalogs)
+lbl_1025FF3C:
 /* 1025FF3C 0025FF3C  38 60 00 01 */	li r3, 1
 /* 1025FF40 0025FF40  4E 80 00 20 */	blr 
 lbl_1025FF44:
@@ -1463,8 +1463,8 @@ lbl_1025FF7C:
 /* 1025FFF4 0025FFF4  7C 89 03 A6 */	mtctr r4
 /* 1025FFF8 0025FFF8  4E 80 04 20 */	bctr 
 
-.global sub_1025FFFC
-sub_1025FFFC:
+# fake split (inside .GetFunctionSubMask__11cWinCatalogFQ27CPState20eFunctionSubCatalogs)
+lbl_1025FFFC:
 /* 1025FFFC 0025FFFC  38 60 00 01 */	li r3, 1
 /* 10260000 00260000  4E 80 00 20 */	blr 
 lbl_10260004:
@@ -1502,8 +1502,8 @@ lbl_1026003C:
 /* 102600B4 002600B4  7C 89 03 A6 */	mtctr r4
 /* 102600B8 002600B8  4E 80 04 20 */	bctr 
 
-.global sub_102600BC
-sub_102600BC:
+# fake split (inside .GetFunctionMask__11cWinCatalogFQ27CPState19NewFunctionCatalogs)
+lbl_102600BC:
 /* 102600BC 002600BC  38 60 00 01 */	li r3, 1
 /* 102600C0 002600C0  4E 80 00 20 */	blr 
 lbl_102600C4:
@@ -1556,8 +1556,8 @@ lbl_1026019C:
 /* 1026019C 0026019C  38 60 00 80 */	li r3, 0x80
 /* 102601A0 002601A0  4E 80 00 20 */	blr 
 
-.global sub_102601A4
-sub_102601A4:
+# fake split (inside .GetRoomMask__11cWinCatalogFQ27CPState15NewRoomCatalogs)
+lbl_102601A4:
 /* 102601A4 002601A4  38 60 00 08 */	li r3, 8
 /* 102601A8 002601A8  4E 80 00 20 */	blr 
 lbl_102601AC:
@@ -1649,8 +1649,8 @@ lbl_102602F4:
 /* 10260320 00260320  7C 69 03 A6 */	mtctr r3
 /* 10260324 00260324  4E 80 04 20 */	bctr 
 
-.global sub_10260328
-sub_10260328:
+# fake split (inside .LoadBooks__11cWinCatalogFQ27CPState14NewCatalogSort)
+lbl_10260328:
 /* 10260328 00260328  80 8F 00 CC */	lwz r4, 0xcc(r15)
 /* 1026032C 0026032C  38 A0 00 04 */	li r5, 4
 /* 10260330 00260330  80 6F 01 C4 */	lwz r3, 0x1c4(r15)
@@ -1798,8 +1798,8 @@ lbl_1026052C:
 /* 10260544 00260544  7C 69 03 A6 */	mtctr r3
 /* 10260548 00260548  4E 80 04 20 */	bctr 
 
-.global sub_1026054C
-sub_1026054C:
+# fake split (inside .LoadBooks__11cWinCatalogFQ27CPState14NewCatalogSort)
+lbl_1026054C:
 /* 1026054C 0026054C  80 0F 04 64 */	lwz r0, 0x464(r15)
 /* 10260550 00260550  2C 00 00 00 */	cmpwi r0, 0
 /* 10260554 00260554  40 82 00 74 */	bne lbl_102605C8
@@ -2938,8 +2938,8 @@ lbl_102616A8:
 /* 102616CC 002616CC  7C 89 03 A6 */	mtctr r4
 /* 102616D0 002616D0  4E 80 04 20 */	bctr 
 
-.global sub_102616D4
-sub_102616D4:
+# fake split (inside .TSOnCommand__11cWinCatalogFUlUl)
+lbl_102616D4:
 /* 102616D4 002616D4  7F A4 EB 78 */	mr r4, r29
 /* 102616D8 002616D8  4B FA 41 29 */	bl "ShopSetRoomCatalog__7CPStateFQ27CPState15NewRoomCatalogs"
 /* 102616DC 002616DC  80 7E 00 CC */	lwz r3, 0xcc(r30)
@@ -3020,8 +3020,8 @@ lbl_102617C8:
 /* 102617E0 002617E0  7C 89 03 A6 */	mtctr r4
 /* 102617E4 002617E4  4E 80 04 20 */	bctr 
 
-.global sub_102617E8
-sub_102617E8:
+# fake split (inside .TSOnCommand__11cWinCatalogFUlUl)
+lbl_102617E8:
 /* 102617E8 002617E8  7F A4 EB 78 */	mr r4, r29
 /* 102617EC 002617EC  4B FA 3E D5 */	bl "ShopSetRoomSubCatalog__7CPStateFQ27CPState19NewFunctionCatalogs"
 /* 102617F0 002617F0  48 00 00 48 */	b lbl_10261838
@@ -5120,8 +5120,8 @@ lbl_102637A8:
 /* 1026384C 0026384C  7C 69 03 A6 */	mtctr r3
 /* 10263850 00263850  4E 80 04 20 */	bctr 
 
-.global sub_10263854
-sub_10263854:
+# fake split (inside .__ct__11cWinCatalogFP7CPStateP9cTSBuffer)
+lbl_10263854:
 /* 10263854 00263854  80 7E 00 98 */	lwz r3, 0x98(r30)
 /* 10263858 00263858  4B FF C9 09 */	bl "GetRoomMask__11cWinCatalogFQ27CPState15NewRoomCatalogs"
 /* 1026385C 0026385C  90 7D 04 68 */	stw r3, 0x468(r29)

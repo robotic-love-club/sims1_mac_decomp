@@ -76,7 +76,7 @@ lbl_102AF750:
 .global "GetOppositeSegment__9TileWallsFQ29TileWalls7Segment"
 "GetOppositeSegment__9TileWallsFQ29TileWalls7Segment":
 /* 102AF7A0 002AF7A0  28 03 00 20 */	cmplwi r3, 0x20
-/* 102AF7A4 002AF7A4  41 81 00 3C */	bgt sub_102AF7E0
+/* 102AF7A4 002AF7A4  41 81 00 3C */	bgt lbl_102AF7E0
 /* 102AF7A8 002AF7A8  80 82 B2 1C */	lwz r4, lbl_105BC67C-_R2_BASE_(r2)
 /* 102AF7AC 002AF7AC  54 60 10 3A */	slwi r0, r3, 2
 /* 102AF7B0 002AF7B0  7C 84 00 2E */	lwzx r4, r4, r0
@@ -97,8 +97,8 @@ lbl_102AF7D4:
 lbl_102AF7DC:
 /* 102AF7DC 002AF7DC  4E 80 00 20 */	blr 
 
-.global sub_102AF7E0
-sub_102AF7E0:
+# fake split (inside .GetOppositeSegment__9TileWallsFQ29TileWalls7Segment)
+lbl_102AF7E0:
 /* 102AF7E0 002AF7E0  38 60 00 00 */	li r3, 0
 /* 102AF7E4 002AF7E4  4E 80 00 20 */	blr 
 
@@ -168,8 +168,8 @@ lbl_102AF8EC:
 /* 102AF914 002AF914  98 61 FF FE */	stb r3, -2(r1)
 /* 102AF918 002AF918  98 04 00 01 */	stb r0, 1(r4)
 
-.global sub_102AF91C
-sub_102AF91C:
+# fake split (inside .GetAdjacentTile__9TileWallsFQ29TileWalls7SegmentP7CTilePt)
+lbl_102AF91C:
 /* 102AF91C 002AF91C  4E 80 00 20 */	blr 
 
 .global "CanAdd__9TileWallsCFQ29TileWalls7Segment"

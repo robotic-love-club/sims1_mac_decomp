@@ -625,8 +625,8 @@ lbl_10097C28:
 lbl_10097C64:
 /* 10097C64 00097C64  38 C0 00 01 */	li r6, 1
 
-.global sub_10097C68
-sub_10097C68:
+# fake split (inside .AttemptFloaterPlacement__14cXCursorObjectFRC7FTilePti)
+lbl_10097C68:
 /* 10097C68 00097C68  38 E0 FF FF */	li r7, -1
 /* 10097C6C 00097C6C  48 00 00 24 */	b lbl_10097C90
 lbl_10097C70:

@@ -1531,8 +1531,8 @@ lbl_1046D8D4:
 /* 1046D8E8 0046D8E8  7C 69 03 A6 */	mtctr r3
 /* 1046D8EC 0046D8EC  4E 80 04 20 */	bctr 
 
-.global sub_1046D8F0
-sub_1046D8F0:
+# fake split (inside .ProcessFilterToolbar__14cWinStudiotownFi)
+lbl_1046D8F0:
 /* 1046D8F0 0046D8F0  38 7E 00 00 */	addi r3, r30, 0
 /* 1046D8F4 0046D8F4  38 80 00 20 */	li r4, 0x20
 /* 1046D8F8 0046D8F8  48 00 0D 99 */	bl "SetFilterMode__14cWinStudiotownFi"
@@ -1651,8 +1651,8 @@ lbl_1046DAB0:
 /* 1046DAC4 0046DAC4  7C 69 03 A6 */	mtctr r3
 /* 1046DAC8 0046DAC8  4E 80 04 20 */	bctr 
 
-.global sub_1046DACC
-sub_1046DACC:
+# fake split (inside .BuildFilterToolbar__14cWinStudiotownFv)
+lbl_1046DACC:
 /* 1046DACC 0046DACC  38 81 00 40 */	addi r4, r1, 0x40
 /* 1046DAD0 0046DAD0  38 60 13 C9 */	li r3, 0x13c9
 /* 1046DAD4 0046DAD4  38 A0 00 04 */	li r5, 4
@@ -6330,7 +6330,7 @@ lbl_1047224C:
 /* 10472250 00472250  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 10472254 00472254  7C 00 07 74 */	extsb r0, r0
 /* 10472258 00472258  28 00 00 0F */	cmplwi r0, 0xf
-/* 1047225C 0047225C  41 81 00 48 */	bgt sub_104722A4
+/* 1047225C 0047225C  41 81 00 48 */	bgt lbl_104722A4
 /* 10472260 00472260  80 62 B9 88 */	lwz r3, lbl_105BCDE8-_R2_BASE_(r2)
 /* 10472264 00472264  54 00 10 3A */	slwi r0, r0, 2
 /* 10472268 00472268  7C 63 00 2E */	lwzx r3, r3, r0
@@ -6353,8 +6353,8 @@ lbl_10472298:
 /* 1047229C 0047229C  90 1D 00 08 */	stw r0, 8(r29)
 /* 104722A0 004722A0  48 00 00 0C */	b lbl_104722AC
 
-.global sub_104722A4
-sub_104722A4:
+# fake split (inside .Init__14cWinStudiotownFv)
+lbl_104722A4:
 /* 104722A4 004722A4  38 00 15 2D */	li r0, 0x152d
 /* 104722A8 004722A8  90 1D 00 08 */	stw r0, 8(r29)
 lbl_104722AC:

@@ -32,8 +32,8 @@ lbl_10099194:
 lbl_100991BC:
 /* 100991BC 000991BC  38 80 00 01 */	li r4, 1
 
-.global sub_100991C0
-sub_100991C0:
+# fake split (inside .MergeInPlace__10cXMTObjectFv)
+lbl_100991C0:
 /* 100991C0 000991C0  38 A0 FF FF */	li r5, -1
 /* 100991C4 000991C4  48 00 00 24 */	b lbl_100991E8
 lbl_100991C8:
@@ -157,8 +157,8 @@ lbl_1009933C:
 lbl_10099388:
 /* 10099388 00099388  38 80 00 01 */	li r4, 1
 
-.global sub_1009938C
-sub_1009938C:
+# fake split (inside .UpdateDynAdjacency__10cXMTObjectFv)
+lbl_1009938C:
 /* 1009938C 0009938C  38 A0 FF FF */	li r5, -1
 /* 10099390 00099390  48 00 00 24 */	b lbl_100993B4
 lbl_10099394:
@@ -404,8 +404,8 @@ lbl_10099710:
 /* 10099760 00099760  7C 69 03 A6 */	mtctr r3
 /* 10099764 00099764  4E 80 04 20 */	bctr 
 
-.global sub_10099768
-sub_10099768:
+# fake split (inside .MergeDynamic__10cXMTObjectFP10cXMTObject)
+lbl_10099768:
 /* 10099768 00099768  90 BF 01 94 */	stw r5, 0x194(r31)
 /* 1009976C 0009976C  90 9F 01 98 */	stw r4, 0x198(r31)
 /* 10099770 00099770  48 00 00 34 */	b lbl_100997A4
@@ -1649,8 +1649,8 @@ lbl_1009AB5C:
 /* 1009AB98 0009AB98  7C 69 03 A6 */	mtctr r3
 /* 1009AB9C 0009AB9C  4E 80 04 20 */	bctr 
 
-.global sub_1009ABA0
-sub_1009ABA0:
+# fake split (inside .AssignOffsets__10cXMTObjectFv)
+lbl_1009ABA0:
 /* 1009ABA0 0009ABA0  90 A7 01 A0 */	stw r5, 0x1a0(r7)
 /* 1009ABA4 0009ABA4  90 87 01 A4 */	stw r4, 0x1a4(r7)
 /* 1009ABA8 0009ABA8  48 00 00 34 */	b lbl_1009ABDC

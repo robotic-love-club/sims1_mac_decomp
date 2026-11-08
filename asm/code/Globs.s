@@ -43,8 +43,8 @@
 /* 1007F0EC 0007F0EC  7C 89 03 A6 */	mtctr r4
 /* 1007F0F0 0007F0F0  4E 80 04 20 */	bctr 
 
-.global sub_1007F0F4
-sub_1007F0F4:
+# fake split (inside .GetStringConstant__Fi)
+lbl_1007F0F4:
 /* 1007F0F4 0007F0F4  38 C5 00 02 */	addi r6, r5, 2
 /* 1007F0F8 0007F0F8  48 00 02 F8 */	b lbl_1007F3F0
 lbl_1007F0FC:

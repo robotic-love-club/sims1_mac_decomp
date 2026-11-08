@@ -488,8 +488,8 @@ lbl_1025D508:
 /* 1025D51C 0025D51C  7C 69 03 A6 */	mtctr r3
 /* 1025D520 0025D520  4E 80 04 20 */	bctr 
 
-.global sub_1025D524
-sub_1025D524:
+# fake split (inside .TSOnCommand__12cWinCamPanelFUlUl)
+lbl_1025D524:
 /* 1025D524 0025D524  80 7F 00 D8 */	lwz r3, 0xd8(r31)
 /* 1025D528 0025D528  28 03 00 00 */	cmplwi r3, 0
 /* 1025D52C 0025D52C  41 82 00 0C */	beq lbl_1025D538

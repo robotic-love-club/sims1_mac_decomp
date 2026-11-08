@@ -2521,8 +2521,8 @@ lbl_100BC4A4:
 /* 100BC4B8 000BC4B8  7C 69 03 A6 */	mtctr r3
 /* 100BC4BC 000BC4BC  4E 80 04 20 */	bctr 
 
-.global sub_100BC4C0
-sub_100BC4C0:
+# fake split (inside .FindGoodLocation__8cXObjectFRC22FindGoodLocationParamsP7FTilePt)
+lbl_100BC4C0:
 /* 100BC4C0 000BC4C0  2C 1C 00 00 */	cmpwi r28, 0
 /* 100BC4C4 000BC4C4  40 81 00 0C */	ble lbl_100BC4D0
 /* 100BC4C8 000BC4C8  7F 9C 00 D0 */	neg r28, r28

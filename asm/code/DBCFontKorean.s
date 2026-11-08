@@ -600,8 +600,8 @@ lbl_103AF9D0:
 /* 103AFA20 003AFA20  90 9C 00 30 */	stw r4, 0x30(r28)
 /* 103AFA24 003AFA24  48 00 01 C4 */	b lbl_103AFBE8
 
-.global sub_103AFA28
-sub_103AFA28:
+# fake split (inside .__ct__17DBCFontBaseKoreanFi)
+lbl_103AFA28:
 /* 103AFA28 003AFA28  38 A0 00 0C */	li r5, 0xc
 /* 103AFA2C 003AFA2C  3B E7 01 AD */	addi r31, r7, 0x1ad
 /* 103AFA30 003AFA30  90 BC 00 00 */	stw r5, 0(r28)

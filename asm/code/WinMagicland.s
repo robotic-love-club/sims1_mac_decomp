@@ -1472,8 +1472,8 @@ lbl_105773C0:
 /* 105773D4 005773D4  7C 69 03 A6 */	mtctr r3
 /* 105773D8 005773D8  4E 80 04 20 */	bctr 
 
-.global sub_105773DC
-sub_105773DC:
+# fake split (inside .ProcessFilterToolbar__13cWinMagiclandFi)
+lbl_105773DC:
 /* 105773DC 005773DC  38 7E 00 00 */	addi r3, r30, 0
 /* 105773E0 005773E0  38 80 10 00 */	li r4, 0x1000
 /* 105773E4 005773E4  48 00 0B 0D */	bl "SetFilterMode__13cWinMagiclandFi"
@@ -1576,8 +1576,8 @@ lbl_10577560:
 /* 10577574 00577574  7C 69 03 A6 */	mtctr r3
 /* 10577578 00577578  4E 80 04 20 */	bctr 
 
-.global sub_1057757C
-sub_1057757C:
+# fake split (inside .BuildFilterToolbar__13cWinMagiclandFv)
+lbl_1057757C:
 /* 1057757C 0057757C  38 81 00 40 */	addi r4, r1, 0x40
 /* 10577580 00577580  38 60 13 D4 */	li r3, 0x13d4
 /* 10577584 00577584  38 A0 00 04 */	li r5, 4
@@ -7551,7 +7551,7 @@ lbl_1057D0DC:
 /* 1057D0E0 0057D0E0  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 1057D0E4 0057D0E4  7C 00 07 74 */	extsb r0, r0
 /* 1057D0E8 0057D0E8  28 00 00 0F */	cmplwi r0, 0xf
-/* 1057D0EC 0057D0EC  41 81 00 48 */	bgt sub_1057D134
+/* 1057D0EC 0057D0EC  41 81 00 48 */	bgt lbl_1057D134
 /* 1057D0F0 0057D0F0  80 62 BD A0 */	lwz r3, lbl_105BD200-_R2_BASE_(r2)
 /* 1057D0F4 0057D0F4  54 00 10 3A */	slwi r0, r0, 2
 /* 1057D0F8 0057D0F8  7C 63 00 2E */	lwzx r3, r3, r0
@@ -7574,8 +7574,8 @@ lbl_1057D128:
 /* 1057D12C 0057D12C  90 1D 00 08 */	stw r0, 8(r29)
 /* 1057D130 0057D130  48 00 00 0C */	b lbl_1057D13C
 
-.global sub_1057D134
-sub_1057D134:
+# fake split (inside .Init__13cWinMagiclandFv)
+lbl_1057D134:
 /* 1057D134 0057D134  38 00 15 2D */	li r0, 0x152d
 /* 1057D138 0057D138  90 1D 00 08 */	stw r0, 8(r29)
 lbl_1057D13C:

@@ -9134,7 +9134,7 @@ lbl_1021F63C:
 /* 1021F7BC 0021F7BC  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 1021F7C0 0021F7C0  7C 00 07 74 */	extsb r0, r0
 /* 1021F7C4 0021F7C4  28 00 00 14 */	cmplwi r0, 0x14
-/* 1021F7C8 0021F7C8  41 81 03 38 */	bgt sub_1021FB00
+/* 1021F7C8 0021F7C8  41 81 03 38 */	bgt lbl_1021FB00
 /* 1021F7CC 0021F7CC  80 62 AC D0 */	lwz r3, lbl_105BC130-_R2_BASE_(r2)
 /* 1021F7D0 0021F7D0  54 00 10 3A */	slwi r0, r0, 2
 /* 1021F7D4 0021F7D4  7C 63 00 2E */	lwzx r3, r3, r0
@@ -9361,8 +9361,8 @@ lbl_1021FAD8:
 /* 1021FAF8 0021FAF8  48 34 8C 19 */	bl "__dt__9CTGStringFv"
 /* 1021FAFC 0021FAFC  48 00 00 28 */	b lbl_1021FB24
 
-.global sub_1021FB00
-sub_1021FB00:
+# fake split (inside .GetWebCharacterSet__Fv)
+lbl_1021FB00:
 /* 1021FB00 0021FB00  38 61 00 94 */	addi r3, r1, 0x94
 /* 1021FB04 0021FB04  38 9F 0B 64 */	addi r4, r31, 0xb64
 /* 1021FB08 0021FB08  48 34 8D 19 */	bl "__ct__9CTGStringFPCc"
@@ -9402,7 +9402,7 @@ lbl_1021FB24:
 /* 1021FBAC 0021FBAC  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 1021FBB0 0021FBB0  7C 00 07 74 */	extsb r0, r0
 /* 1021FBB4 0021FBB4  28 00 00 14 */	cmplwi r0, 0x14
-/* 1021FBB8 0021FBB8  41 81 03 38 */	bgt sub_1021FEF0
+/* 1021FBB8 0021FBB8  41 81 03 38 */	bgt lbl_1021FEF0
 /* 1021FBBC 0021FBBC  80 62 AC CC */	lwz r3, lbl_105BC12C-_R2_BASE_(r2)
 /* 1021FBC0 0021FBC0  54 00 10 3A */	slwi r0, r0, 2
 /* 1021FBC4 0021FBC4  7C 63 00 2E */	lwzx r3, r3, r0
@@ -9629,8 +9629,8 @@ lbl_1021FEC8:
 /* 1021FEE8 0021FEE8  48 34 88 29 */	bl "__dt__9CTGStringFv"
 /* 1021FEEC 0021FEEC  48 00 00 28 */	b lbl_1021FF14
 
-.global sub_1021FEF0
-sub_1021FEF0:
+# fake split (inside .GetWebLanguageCode__Fv)
+lbl_1021FEF0:
 /* 1021FEF0 0021FEF0  38 61 00 94 */	addi r3, r1, 0x94
 /* 1021FEF4 0021FEF4  38 9F 0B AD */	addi r4, r31, 0xbad
 /* 1021FEF8 0021FEF8  48 34 89 29 */	bl "__ct__9CTGStringFPCc"

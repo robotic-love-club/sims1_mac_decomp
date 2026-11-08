@@ -1084,8 +1084,8 @@ lbl_102CD608:
 /* 102CD6E8 002CD6E8  7C 69 03 A6 */	mtctr r3
 /* 102CD6EC 002CD6EC  4E 80 04 20 */	bctr 
 
-.global sub_102CD6F0
-sub_102CD6F0:
+# fake split (inside .SetHouseInfo__12cWinLotPopupFP9HouseInfoP13RampGeneratorb)
+lbl_102CD6F0:
 /* 102CD6F0 002CD6F0  80 FF 00 D8 */	lwz r7, 0xd8(r31)
 /* 102CD6F4 002CD6F4  57 A0 10 3A */	slwi r0, r29, 2
 /* 102CD6F8 002CD6F8  80 9F 00 E4 */	lwz r4, 0xe4(r31)

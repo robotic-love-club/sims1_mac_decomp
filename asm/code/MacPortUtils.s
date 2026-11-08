@@ -244,8 +244,8 @@ lbl_1000DF0C:
 /* 1000DF5C 0000DF5C  7C 69 03 A6 */	mtctr r3
 /* 1000DF60 0000DF60  4E 80 04 20 */	bctr 
 
-.global sub_1000DF64
-sub_1000DF64:
+# fake split (inside .EventToMessage__FP11EventRecordP6tagMSG)
+lbl_1000DF64:
 /* 1000DF64 0000DF64  38 00 00 00 */	li r0, 0
 /* 1000DF68 0000DF68  90 1F 00 04 */	stw r0, 4(r31)
 /* 1000DF6C 0000DF6C  80 7B 00 00 */	lwz r3, 0(r27)

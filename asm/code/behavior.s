@@ -9176,8 +9176,8 @@ lbl_100426A8:
 /* 100426D0 000426D0  7C 69 03 A6 */	mtctr r3
 /* 100426D4 000426D4  4E 80 04 20 */	bctr 
 
-.global sub_100426D8
-sub_100426D8:
+# fake split (inside .__parseDigits<Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>,l,Q23std8ctype<c>>__3stdFRQ23std45istreambuf_iterator<c,Q23std14char_traits<c>>Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>RQ23std8ios_baseRQ33std8ios_base7iostatebRlRCQ23std8ctype<c>Uib_i)
+lbl_100426D8:
 /* 100426D8 000426D8  3B A0 00 03 */	li r29, 3
 /* 100426DC 000426DC  48 00 03 58 */	b lbl_10042A34
 lbl_100426E0:
@@ -9737,8 +9737,8 @@ lbl_10043358:
 /* 10043384 00043384  7C 69 03 A6 */	mtctr r3
 /* 10043388 00043388  4E 80 04 20 */	bctr 
 
-.global sub_1004338C
-sub_1004338C:
+# fake split (inside .__parseDigits<Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>,Ux,Q23std8ctype<c>>__3stdFRQ23std45istreambuf_iterator<c,Q23std14char_traits<c>>Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>RQ23std8ios_baseRQ33std8ios_base7iostatebRUxRCQ23std8ctype<c>Uib_i)
+lbl_1004338C:
 /* 1004338C 0004338C  3B E0 00 03 */	li r31, 3
 /* 10043390 00043390  48 00 03 84 */	b lbl_10043714
 lbl_10043394:
@@ -10120,8 +10120,8 @@ lbl_100439D8:
 /* 10043A04 00043A04  7C 69 03 A6 */	mtctr r3
 /* 10043A08 00043A08  4E 80 04 20 */	bctr 
 
-.global sub_10043A0C
-sub_10043A0C:
+# fake split (inside .__parseDigits<Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>,x,Q23std8ctype<c>>__3stdFRQ23std45istreambuf_iterator<c,Q23std14char_traits<c>>Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>RQ23std8ios_baseRQ33std8ios_base7iostatebRxRCQ23std8ctype<c>Uib_i)
+lbl_10043A0C:
 /* 10043A0C 00043A0C  3B C0 00 03 */	li r30, 3
 /* 10043A10 00043A10  48 00 04 1C */	b lbl_10043E2C
 lbl_10043A14:
@@ -10541,8 +10541,8 @@ lbl_100440E8:
 /* 10044110 00044110  7C 69 03 A6 */	mtctr r3
 /* 10044114 00044114  4E 80 04 20 */	bctr 
 
-.global sub_10044118
-sub_10044118:
+# fake split (inside .__parseDigits<Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>,Ul,Q23std8ctype<c>>__3stdFRQ23std45istreambuf_iterator<c,Q23std14char_traits<c>>Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>RQ23std8ios_baseRQ33std8ios_base7iostatebRUlRCQ23std8ctype<c>Uib_i)
+lbl_10044118:
 /* 10044118 00044118  3B A0 00 03 */	li r29, 3
 /* 1004411C 0004411C  48 00 03 18 */	b lbl_10044434
 lbl_10044120:
@@ -10892,8 +10892,8 @@ lbl_100446E8:
 /* 10044710 00044710  7C 69 03 A6 */	mtctr r3
 /* 10044714 00044714  4E 80 04 20 */	bctr 
 
-.global sub_10044718
-sub_10044718:
+# fake split (inside .__parseDigits<Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>,Ui,Q23std8ctype<c>>__3stdFRQ23std45istreambuf_iterator<c,Q23std14char_traits<c>>Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>RQ23std8ios_baseRQ33std8ios_base7iostatebRUiRCQ23std8ctype<c>Uib_i)
+lbl_10044718:
 /* 10044718 00044718  3B A0 00 03 */	li r29, 3
 /* 1004471C 0004471C  48 00 03 18 */	b lbl_10044A34
 lbl_10044720:
@@ -11243,8 +11243,8 @@ lbl_10044CE8:
 /* 10044D10 00044D10  7C 69 03 A6 */	mtctr r3
 /* 10044D14 00044D14  4E 80 04 20 */	bctr 
 
-.global sub_10044D18
-sub_10044D18:
+# fake split (inside .__parseDigits<Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>,Us,Q23std8ctype<c>>__3stdFRQ23std45istreambuf_iterator<c,Q23std14char_traits<c>>Q23std45istreambuf_iterator<c,Q23std14char_traits<c>>RQ23std8ios_baseRQ33std8ios_base7iostatebRUsRCQ23std8ctype<c>Uib_i)
+lbl_10044D18:
 /* 10044D18 00044D18  3B A0 00 03 */	li r29, 3
 /* 10044D1C 00044D1C  48 00 03 38 */	b lbl_10045054
 lbl_10044D20:

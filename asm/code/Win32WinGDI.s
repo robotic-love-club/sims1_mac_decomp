@@ -394,8 +394,8 @@ lbl_1002B3C0:
 /* 1002B3D0 0002B3D0  AB C3 00 20 */	lha r30, 0x20(r3)
 /* 1002B3D4 0002B3D4  48 00 00 48 */	b lbl_1002B41C
 
-.global sub_1002B3D8
-sub_1002B3D8:
+# fake split (inside .GetDeviceCaps)
+lbl_1002B3D8:
 /* 1002B3D8 0002B3D8  38 7F 00 00 */	addi r3, r31, 0
 /* 1002B3DC 0002B3DC  38 81 00 40 */	addi r4, r1, 0x40
 /* 1002B3E0 0002B3E0  48 56 C1 81 */	bl func_10597560

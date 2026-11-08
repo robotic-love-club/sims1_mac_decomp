@@ -588,8 +588,8 @@ lbl_1016BA74:
 /* 1016BBD4 0016BBD4  7C 89 03 A6 */	mtctr r4
 /* 1016BBD8 0016BBD8  4E 80 04 20 */	bctr 
 
-.global sub_1016BBDC
-sub_1016BBDC:
+# fake split (inside .GetSortVal__9cMoveToolFP11ObjSelectori)
+lbl_1016BBDC:
 /* 1016BBDC 0016BBDC  83 E2 A9 7C */	lwz r31, lbl_105BBDDC-_R2_BASE_(r2)
 /* 1016BBE0 0016BBE0  48 00 00 30 */	b lbl_1016BC10
 lbl_1016BBE4:
@@ -671,8 +671,8 @@ lbl_1016BC78:
 /* 1016BD1C 0016BD1C  7C 89 03 A6 */	mtctr r4
 /* 1016BD20 0016BD20  4E 80 04 20 */	bctr 
 
-.global sub_1016BD24
-sub_1016BD24:
+# fake split (inside .IsSelectorOfType__9cMoveToolFP11ObjSelectori)
+lbl_1016BD24:
 /* 1016BD24 0016BD24  4B F9 07 5D */	bl "GetGUID__11ObjSelectorFv"
 /* 1016BD28 0016BD28  80 1F 00 04 */	lwz r0, 4(r31)
 /* 1016BD2C 0016BD2C  38 C0 00 00 */	li r6, 0
@@ -2711,8 +2711,8 @@ lbl_1016DBF4:
 /* 1016DBF4 0016DBF4  38 80 00 0D */	li r4, 0xd
 /* 1016DBF8 0016DBF8  48 00 00 30 */	b lbl_1016DC28
 
-.global sub_1016DBFC
-sub_1016DBFC:
+# fake split (inside .UpdateCursor__9cMoveToolFv)
+lbl_1016DBFC:
 /* 1016DBFC 0016DBFC  38 80 00 0E */	li r4, 0xe
 /* 1016DC00 0016DC00  48 00 00 28 */	b lbl_1016DC28
 lbl_1016DC04:
@@ -2781,8 +2781,8 @@ lbl_1016DD04:
 /* 1016DD04 0016DD04  38 60 00 00 */	li r3, 0
 /* 1016DD08 0016DD08  48 00 01 88 */	b lbl_1016DE90
 
-.global sub_1016DD0C
-sub_1016DD0C:
+# fake split (inside .OnChar__9cMoveToolFii)
+lbl_1016DD0C:
 /* 1016DD0C 0016DD0C  80 7B 00 3C */	lwz r3, 0x3c(r27)
 /* 1016DD10 0016DD10  28 03 00 00 */	cmplwi r3, 0
 /* 1016DD14 0016DD14  41 82 00 44 */	beq lbl_1016DD58
@@ -5107,11 +5107,11 @@ lbl_10170120:
 /* 1017012C 0017012C  80 83 00 60 */	lwz r4, 0x60(r3)
 /* 10170130 00170130  A8 04 00 4E */	lha r0, 0x4e(r4)
 /* 10170134 00170134  2C 00 00 00 */	cmpwi r0, 0
-/* 10170138 00170138  40 82 01 58 */	bne sub_10170290
+/* 10170138 00170138  40 82 01 58 */	bne lbl_10170290
 /* 1017013C 0017013C  A8 84 00 8A */	lha r4, 0x8a(r4)
 /* 10170140 00170140  38 04 00 01 */	addi r0, r4, 1
 /* 10170144 00170144  28 00 00 08 */	cmplwi r0, 8
-/* 10170148 00170148  41 81 01 48 */	bgt sub_10170290
+/* 10170148 00170148  41 81 01 48 */	bgt lbl_10170290
 /* 1017014C 0017014C  80 82 A9 4C */	lwz r4, lbl_105BBDAC-_R2_BASE_(r2)
 /* 10170150 00170150  54 00 10 3A */	slwi r0, r0, 2
 /* 10170154 00170154  7C 84 00 2E */	lwzx r4, r4, r0
@@ -5128,7 +5128,7 @@ lbl_10170160:
 /* 1017017C 0017017C  38 7E 00 00 */	addi r3, r30, 0
 /* 10170180 00170180  7C 84 02 14 */	add r4, r4, r0
 /* 10170184 00170184  4B EB D3 0D */	bl "insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
-/* 10170188 00170188  48 00 01 08 */	b sub_10170290
+/* 10170188 00170188  48 00 01 08 */	b lbl_10170290
 lbl_1017018C:
 /* 1017018C 0017018C  4B F8 C2 F5 */	bl "GetGUID__11ObjSelectorFv"
 /* 10170190 00170190  80 1D 00 04 */	lwz r0, 4(r29)
@@ -5140,7 +5140,7 @@ lbl_1017018C:
 /* 101701A8 001701A8  38 7D 00 00 */	addi r3, r29, 0
 /* 101701AC 001701AC  7C 84 02 14 */	add r4, r4, r0
 /* 101701B0 001701B0  4B EB D2 E1 */	bl "insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
-/* 101701B4 001701B4  48 00 00 DC */	b sub_10170290
+/* 101701B4 001701B4  48 00 00 DC */	b lbl_10170290
 lbl_101701B8:
 /* 101701B8 001701B8  4B F8 C2 C9 */	bl "GetGUID__11ObjSelectorFv"
 /* 101701BC 001701BC  80 1C 00 04 */	lwz r0, 4(r28)
@@ -5152,7 +5152,7 @@ lbl_101701B8:
 /* 101701D4 001701D4  38 7C 00 00 */	addi r3, r28, 0
 /* 101701D8 001701D8  7C 84 02 14 */	add r4, r4, r0
 /* 101701DC 001701DC  4B EB D2 B5 */	bl "insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
-/* 101701E0 001701E0  48 00 00 B0 */	b sub_10170290
+/* 101701E0 001701E0  48 00 00 B0 */	b lbl_10170290
 lbl_101701E4:
 /* 101701E4 001701E4  4B F8 C2 9D */	bl "GetGUID__11ObjSelectorFv"
 /* 101701E8 001701E8  80 1B 00 04 */	lwz r0, 4(r27)
@@ -5164,7 +5164,7 @@ lbl_101701E4:
 /* 10170200 00170200  38 7B 00 00 */	addi r3, r27, 0
 /* 10170204 00170204  7C 84 02 14 */	add r4, r4, r0
 /* 10170208 00170208  4B EB D2 89 */	bl "insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
-/* 1017020C 0017020C  48 00 00 84 */	b sub_10170290
+/* 1017020C 0017020C  48 00 00 84 */	b lbl_10170290
 lbl_10170210:
 /* 10170210 00170210  4B F8 C2 71 */	bl "GetGUID__11ObjSelectorFv"
 /* 10170214 00170214  80 1A 00 04 */	lwz r0, 4(r26)
@@ -5176,7 +5176,7 @@ lbl_10170210:
 /* 1017022C 0017022C  38 7A 00 00 */	addi r3, r26, 0
 /* 10170230 00170230  7C 84 02 14 */	add r4, r4, r0
 /* 10170234 00170234  4B EB D2 5D */	bl "insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
-/* 10170238 00170238  48 00 00 58 */	b sub_10170290
+/* 10170238 00170238  48 00 00 58 */	b lbl_10170290
 lbl_1017023C:
 /* 1017023C 0017023C  4B F8 C2 45 */	bl "GetGUID__11ObjSelectorFv"
 /* 10170240 00170240  80 19 00 04 */	lwz r0, 4(r25)
@@ -5188,7 +5188,7 @@ lbl_1017023C:
 /* 10170258 00170258  38 79 00 00 */	addi r3, r25, 0
 /* 1017025C 0017025C  7C 84 02 14 */	add r4, r4, r0
 /* 10170260 00170260  4B EB D2 31 */	bl "insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
-/* 10170264 00170264  48 00 00 2C */	b sub_10170290
+/* 10170264 00170264  48 00 00 2C */	b lbl_10170290
 lbl_10170268:
 /* 10170268 00170268  4B F8 C2 19 */	bl "GetGUID__11ObjSelectorFv"
 /* 1017026C 0017026C  80 18 00 04 */	lwz r0, 4(r24)
@@ -5201,8 +5201,8 @@ lbl_10170268:
 /* 10170288 00170288  7C 84 02 14 */	add r4, r4, r0
 /* 1017028C 0017028C  4B EB D2 05 */	bl "insert__Q23std38__vector_pod<Ul,Q23std13allocator<Ul>>FPUlUlRCUl"
 
-.global sub_10170290
-sub_10170290:
+# fake split (inside .__ct__9cMoveToolFP11UndoManager)
+lbl_10170290:
 /* 10170290 00170290  3A D6 00 01 */	addi r22, r22, 1
 lbl_10170294:
 /* 10170294 00170294  7C 16 F8 00 */	cmpw r22, r31

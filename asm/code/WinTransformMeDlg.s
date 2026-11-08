@@ -58,8 +58,8 @@ lbl_105746D4:
 /* 105746F0 005746F0  7C 69 03 A6 */	mtctr r3
 /* 105746F4 005746F4  4E 80 04 20 */	bctr 
 
-.global sub_105746F8
-sub_105746F8:
+# fake split (inside .LookupCostume__18cWinTransformMeDlgFi)
+lbl_105746F8:
 /* 105746F8 005746F8  38 60 00 30 */	li r3, 0x30
 /* 105746FC 005746FC  48 00 00 40 */	b lbl_1057473C
 lbl_10574700:
@@ -96,8 +96,8 @@ lbl_1057473C:
 /* 10574758 00574758  7C 69 03 A6 */	mtctr r3
 /* 1057475C 0057475C  4E 80 04 20 */	bctr 
 
-.global sub_10574760
-sub_10574760:
+# fake split (inside .LookupCostume__18cWinTransformMeDlgFi)
+lbl_10574760:
 /* 10574760 00574760  38 60 00 30 */	li r3, 0x30
 /* 10574764 00574764  4E 80 00 20 */	blr 
 lbl_10574768:

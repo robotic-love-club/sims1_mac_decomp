@@ -42,8 +42,8 @@ lbl_1052CD20:
 /* 1052CD40 0052CD40  48 00 08 11 */	bl "select__14cTSWinTextListFi"
 /* 1052CD44 0052CD44  48 00 00 EC */	b lbl_1052CE30
 
-.global sub_1052CD48
-sub_1052CD48:
+# fake split (inside .TSOnKeyDown__14cTSWinTextListFUlUl)
+lbl_1052CD48:
 /* 1052CD48 0052CD48  38 7F 00 CC */	addi r3, r31, 0xcc
 /* 1052CD4C 0052CD4C  4B D5 F1 55 */	bl "size__Q23std58__vector_imp<P9cTSWinBtn,Q23std22allocator<P9cTSWinBtn>,1>CFv"
 /* 1052CD50 0052CD50  28 03 00 00 */	cmplwi r3, 0

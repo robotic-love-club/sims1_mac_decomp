@@ -94,8 +94,8 @@ lbl_100E2F54:
 /* 100E2F6C 000E2F6C  7C 69 03 A6 */	mtctr r3
 /* 100E2F70 000E2F70  4E 80 04 20 */	bctr 
 
-.global sub_100E2F74
-sub_100E2F74:
+# fake split (inside .TryInventoryAction__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E2F74:
 /* 100E2F74 000E2F74  A0 7D 00 02 */	lhz r3, 2(r29)
 /* 100E2F78 000E2F78  54 60 07 BD */	rlwinm. r0, r3, 0, 0x1e, 0x1e
 /* 100E2F7C 000E2F7C  41 82 00 58 */	beq lbl_100E2FD4
@@ -108,8 +108,8 @@ sub_100E2F74:
 /* 100E2F98 000E2F98  7C 69 03 A6 */	mtctr r3
 /* 100E2F9C 000E2F9C  4E 80 04 20 */	bctr 
 
-.global sub_100E2FA0
-sub_100E2FA0:
+# fake split (inside .TryInventoryAction__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E2FA0:
 /* 100E2FA0 000E2FA0  38 00 00 00 */	li r0, 0
 /* 100E2FA4 000E2FA4  48 00 00 20 */	b lbl_100E2FC4
 lbl_100E2FA8:
@@ -152,8 +152,8 @@ lbl_100E2FF8:
 /* 100E301C 000E301C  7C 69 03 A6 */	mtctr r3
 /* 100E3020 000E3020  4E 80 04 20 */	bctr 
 
-.global sub_100E3024
-sub_100E3024:
+# fake split (inside .TryInventoryAction__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E3024:
 /* 100E3024 000E3024  38 00 00 00 */	li r0, 0
 /* 100E3028 000E3028  48 00 00 20 */	b lbl_100E3048
 lbl_100E302C:
@@ -196,8 +196,8 @@ lbl_100E307C:
 /* 100E30A0 000E30A0  7C 69 03 A6 */	mtctr r3
 /* 100E30A4 000E30A4  4E 80 04 20 */	bctr 
 
-.global sub_100E30A8
-sub_100E30A8:
+# fake split (inside .TryInventoryAction__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E30A8:
 /* 100E30A8 000E30A8  38 00 00 00 */	li r0, 0
 /* 100E30AC 000E30AC  48 00 00 20 */	b lbl_100E30CC
 lbl_100E30B0:
@@ -903,8 +903,8 @@ lbl_100E3A30:
 lbl_100E3A94:
 /* 100E3A94 000E3A94  38 C0 00 01 */	li r6, 1
 
-.global sub_100E3A98
-sub_100E3A98:
+# fake split (inside .TrySnap__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E3A98:
 /* 100E3A98 000E3A98  38 E0 FF FF */	li r7, -1
 /* 100E3A9C 000E3A9C  48 00 00 24 */	b lbl_100E3AC0
 lbl_100E3AA0:
@@ -1290,8 +1290,8 @@ lbl_100E3FB0:
 /* 100E3FE4 000E3FE4  7C 69 03 A6 */	mtctr r3
 /* 100E3FE8 000E3FE8  4E 80 04 20 */	bctr 
 
-.global sub_100E3FEC
-sub_100E3FEC:
+# fake split (inside .TrySnap__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E3FEC:
 /* 100E3FEC 000E3FEC  FC 60 08 90 */	fmr f3, f1
 /* 100E3FF0 000E3FF0  FC 40 00 90 */	fmr f2, f0
 /* 100E3FF4 000E3FF4  48 00 00 24 */	b lbl_100E4018
@@ -2353,8 +2353,8 @@ lbl_100E4FDC:
 /* 100E4FE0 000E4FE0  4B FF 53 41 */	bl "SetStarSimDirty__12ObjectModuleFP8cXPerson"
 /* 100E4FE4 000E4FE4  48 00 15 84 */	b lbl_100E6568
 
-.global sub_100E4FE8
-sub_100E4FE8:
+# fake split (inside .InterpValue__8cXObjectFssb)
+lbl_100E4FE8:
 /* 100E4FE8 000E4FE8  80 7D 01 1C */	lwz r3, 0x11c(r29)
 /* 100E4FEC 000E4FEC  38 80 00 01 */	li r4, 1
 /* 100E4FF0 000E4FF0  48 01 4A E1 */	bl "SetHeadTextureDirty__11ObjSelectorFb"
@@ -2504,8 +2504,8 @@ lbl_100E51E0:
 /* 100E51E4 000E51E4  4B FF 51 3D */	bl "SetStarSimDirty__12ObjectModuleFP8cXPerson"
 /* 100E51E8 000E51E8  48 00 13 80 */	b lbl_100E6568
 
-.global sub_100E51EC
-sub_100E51EC:
+# fake split (inside .InterpValue__8cXObjectFssb)
+lbl_100E51EC:
 /* 100E51EC 000E51EC  80 7D 01 1C */	lwz r3, 0x11c(r29)
 /* 100E51F0 000E51F0  38 80 00 01 */	li r4, 1
 /* 100E51F4 000E51F4  48 01 48 DD */	bl "SetHeadTextureDirty__11ObjSelectorFb"
@@ -2676,8 +2676,8 @@ lbl_100E5430:
 /* 100E5434 000E5434  4B FF 4E ED */	bl "SetStarSimDirty__12ObjectModuleFP8cXPerson"
 /* 100E5438 000E5438  48 00 11 30 */	b lbl_100E6568
 
-.global sub_100E543C
-sub_100E543C:
+# fake split (inside .InterpValue__8cXObjectFssb)
+lbl_100E543C:
 /* 100E543C 000E543C  80 7D 01 1C */	lwz r3, 0x11c(r29)
 /* 100E5440 000E5440  38 80 00 01 */	li r4, 1
 /* 100E5444 000E5444  48 01 46 8D */	bl "SetHeadTextureDirty__11ObjSelectorFb"
@@ -2869,8 +2869,8 @@ lbl_100E56CC:
 /* 100E56D0 000E56D0  4B FF 4C 51 */	bl "SetStarSimDirty__12ObjectModuleFP8cXPerson"
 /* 100E56D4 000E56D4  48 00 0E 94 */	b lbl_100E6568
 
-.global sub_100E56D8
-sub_100E56D8:
+# fake split (inside .InterpValue__8cXObjectFssb)
+lbl_100E56D8:
 /* 100E56D8 000E56D8  80 7D 01 1C */	lwz r3, 0x11c(r29)
 /* 100E56DC 000E56DC  38 80 00 01 */	li r4, 1
 /* 100E56E0 000E56E0  48 01 43 F1 */	bl "SetHeadTextureDirty__11ObjSelectorFb"
@@ -3369,8 +3369,8 @@ lbl_100E5D88:
 /* 100E5DB4 000E5DB4  4B FF 48 BD */	bl "SetMotiveDirty__12ObjectModuleFP8cXPersoni"
 /* 100E5DB8 000E5DB8  48 00 07 B0 */	b lbl_100E6568
 
-.global sub_100E5DBC
-sub_100E5DBC:
+# fake split (inside .InterpValue__8cXObjectFssb)
+lbl_100E5DBC:
 /* 100E5DBC 000E5DBC  7F C0 07 35 */	extsh. r0, r30
 /* 100E5DC0 000E5DC0  41 80 00 14 */	blt lbl_100E5DD4
 /* 100E5DC4 000E5DC4  80 1D 00 30 */	lwz r0, 0x30(r29)
@@ -4201,8 +4201,8 @@ lbl_100E6964:
 /* 100E6964 000E6964  3B 40 00 00 */	li r26, 0
 /* 100E6968 000E6968  48 00 04 7C */	b lbl_100E6DE4
 
-.global sub_100E696C
-sub_100E696C:
+# fake split (inside .TryExpression__8cXObjectFP15ExpressionParam)
+lbl_100E696C:
 /* 100E696C 000E696C  7F 63 07 34 */	extsh r3, r27
 /* 100E6970 000E6970  7F 80 07 34 */	extsh r0, r28
 /* 100E6974 000E6974  7C 03 00 00 */	cmpw r3, r0
@@ -5283,8 +5283,8 @@ lbl_100E79A4:
 /* 100E79AC 000E79AC  7C 7A 1B 78 */	mr r26, r3
 /* 100E79B0 000E79B0  48 00 04 64 */	b lbl_100E7E14
 
-.global sub_100E79B4
-sub_100E79B4:
+# fake split (inside .TryElement__8cXObjectFP9StackElemP12BehaviorNode)
+lbl_100E79B4:
 /* 100E79B4 000E79B4  7F 65 DB 78 */	mr r5, r27
 /* 100E79B8 000E79B8  48 00 0B 79 */	bl "TryIdle__8cXObjectFP9StackElemP10XPrimParam"
 /* 100E79BC 000E79BC  7C 7A 1B 78 */	mr r26, r3
@@ -5349,8 +5349,8 @@ lbl_100E7A44:
 lbl_100E7A8C:
 /* 100E7A8C 000E7A8C  38 80 00 01 */	li r4, 1
 
-.global sub_100E7A90
-sub_100E7A90:
+# fake split (inside .TryElement__8cXObjectFP9StackElemP12BehaviorNode)
+lbl_100E7A90:
 /* 100E7A90 000E7A90  38 C0 FF FF */	li r6, -1
 /* 100E7A94 000E7A94  48 00 00 24 */	b lbl_100E7AB8
 lbl_100E7A98:
@@ -6830,8 +6830,8 @@ lbl_100E9030:
 /* 100E90F0 000E90F0  7C 89 03 A6 */	mtctr r4
 /* 100E90F4 000E90F4  4E 80 04 20 */	bctr 
 
-.global sub_100E90F8
-sub_100E90F8:
+# fake split (inside .TryGenericSimCall__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E90F8:
 /* 100E90F8 000E90F8  80 7E 00 00 */	lwz r3, 0(r30)
 /* 100E90FC 000E90FC  38 80 00 00 */	li r4, 0
 /* 100E9100 000E9100  80 63 00 24 */	lwz r3, 0x24(r3)
@@ -7048,8 +7048,8 @@ lbl_100E93DC:
 /* 100E9410 000E9410  7C 69 03 A6 */	mtctr r3
 /* 100E9414 000E9414  4E 80 04 20 */	bctr 
 
-.global sub_100E9418
-sub_100E9418:
+# fake split (inside .TryGenericSimCall__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E9418:
 /* 100E9418 000E9418  FC 60 08 90 */	fmr f3, f1
 /* 100E941C 000E941C  FC 40 00 90 */	fmr f2, f0
 /* 100E9420 000E9420  48 00 00 24 */	b lbl_100E9444
@@ -7101,8 +7101,8 @@ lbl_100E9488:
 /* 100E94BC 000E94BC  7C 69 03 A6 */	mtctr r3
 /* 100E94C0 000E94C0  4E 80 04 20 */	bctr 
 
-.global sub_100E94C4
-sub_100E94C4:
+# fake split (inside .TryGenericSimCall__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100E94C4:
 /* 100E94C4 000E94C4  FC 60 08 90 */	fmr f3, f1
 /* 100E94C8 000E94C8  FC 40 00 90 */	fmr f2, f0
 /* 100E94CC 000E94CC  48 00 00 24 */	b lbl_100E94F0
@@ -8263,8 +8263,8 @@ lbl_100EA4F0:
 /* 100EA550 000EA550  7C 69 03 A6 */	mtctr r3
 /* 100EA554 000EA554  4E 80 04 20 */	bctr 
 
-.global sub_100EA558
-sub_100EA558:
+# fake split (inside .TryGenericSimCall__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100EA558:
 /* 100EA558 000EA558  A8 81 00 B8 */	lha r4, 0xb8(r1)
 /* 100EA55C 000EA55C  3C 00 43 30 */	lis r0, 0x4330
 /* 100EA560 000EA560  80 A2 A6 90 */	lwz r5, lbl_105BBAF0-_R2_BASE_(r2)
@@ -8611,8 +8611,8 @@ lbl_100EA9D4:
 /* 100EAA34 000EAA34  7C 69 03 A6 */	mtctr r3
 /* 100EAA38 000EAA38  4E 80 04 20 */	bctr 
 
-.global sub_100EAA3C
-sub_100EAA3C:
+# fake split (inside .TryGenericSimCall__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100EAA3C:
 /* 100EAA3C 000EAA3C  A8 81 00 D0 */	lha r4, 0xd0(r1)
 /* 100EAA40 000EAA40  3C 00 43 30 */	lis r0, 0x4330
 /* 100EAA44 000EAA44  80 A2 A6 90 */	lwz r5, lbl_105BBAF0-_R2_BASE_(r2)
@@ -9255,8 +9255,8 @@ lbl_100EB3A0:
 /* 100EB3A0 000EB3A0  3B 80 00 11 */	li r28, 0x11
 /* 100EB3A4 000EB3A4  48 00 00 BC */	b lbl_100EB460
 
-.global sub_100EB3A8
-sub_100EB3A8:
+# fake split (inside .TryCallFunctionalTree__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100EB3A8:
 /* 100EB3A8 000EB3A8  3B 80 00 12 */	li r28, 0x12
 /* 100EB3AC 000EB3AC  48 00 00 B4 */	b lbl_100EB460
 lbl_100EB3B0:
@@ -9381,8 +9381,8 @@ lbl_100EB57C:
 /* 100EB580 000EB580  3A E0 00 11 */	li r23, 0x11
 /* 100EB584 000EB584  48 00 00 D0 */	b lbl_100EB654
 
-.global sub_100EB588
-sub_100EB588:
+# fake split (inside .TryFindFunctionalObject__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100EB588:
 /* 100EB588 000EB588  3A C0 00 1F */	li r22, 0x1f
 /* 100EB58C 000EB58C  3A E0 00 12 */	li r23, 0x12
 /* 100EB590 000EB590  48 00 00 C4 */	b lbl_100EB654
@@ -9712,7 +9712,7 @@ lbl_100EBA50:
 /* 100EBA54 000EBA54  54 00 06 7E */	clrlwi r0, r0, 0x19
 /* 100EBA58 000EBA58  7C 07 03 78 */	mr r7, r0
 /* 100EBA5C 000EBA5C  28 07 00 0C */	cmplwi r7, 0xc
-/* 100EBA60 000EBA60  41 81 0A 54 */	bgt sub_100EC4B4
+/* 100EBA60 000EBA60  41 81 0A 54 */	bgt lbl_100EC4B4
 /* 100EBA64 000EBA64  80 62 A6 44 */	lwz r3, lbl_105BBAA4-_R2_BASE_(r2)
 /* 100EBA68 000EBA68  54 E0 10 3A */	slwi r0, r7, 2
 /* 100EBA6C 000EBA6C  7C 63 00 2E */	lwzx r3, r3, r0
@@ -10461,8 +10461,8 @@ lbl_100EC4A4:
 /* 100EC4AC 000EC4AC  38 60 00 00 */	li r3, 0
 /* 100EC4B0 000EC4B0  48 00 01 1C */	b lbl_100EC5CC
 
-.global sub_100EC4B4
-sub_100EC4B4:
+# fake split (inside .TrySetToNext__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100EC4B4:
 /* 100EC4B4 000EC4B4  80 7F 00 4C */	lwz r3, 0x4c(r31)
 /* 100EC4B8 000EC4B8  A8 63 00 00 */	lha r3, 0(r3)
 /* 100EC4BC 000EC4BC  7C 60 07 35 */	extsh. r0, r3
@@ -10904,8 +10904,8 @@ lbl_100ECB50:
 /* 100ECBA8 000ECBA8  7C 89 03 A6 */	mtctr r4
 /* 100ECBAC 000ECBAC  4E 80 04 20 */	bctr 
 
-.global sub_100ECBB0
-sub_100ECBB0:
+# fake split (inside .TryCreateObject__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100ECBB0:
 /* 100ECBB0 000ECBB0  38 E0 00 00 */	li r7, 0
 /* 100ECBB4 000ECBB4  38 C0 FF FF */	li r6, -1
 /* 100ECBB8 000ECBB8  48 00 00 24 */	b lbl_100ECBDC
@@ -10940,8 +10940,8 @@ lbl_100ECBDC:
 /* 100ECC1C 000ECC1C  7E 80 1A 14 */	add r20, r0, r3
 /* 100ECC20 000ECC20  48 00 04 C4 */	b lbl_100ED0E4
 
-.global sub_100ECC24
-sub_100ECC24:
+# fake split (inside .TryCreateObject__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100ECC24:
 /* 100ECC24 000ECC24  80 1E 00 F4 */	lwz r0, 0xf4(r30)
 /* 100ECC28 000ECC28  7C 66 1B 78 */	mr r6, r3
 /* 100ECC2C 000ECC2C  90 01 00 50 */	stw r0, 0x50(r1)
@@ -10959,8 +10959,8 @@ sub_100ECC24:
 lbl_100ECC5C:
 /* 100ECC5C 000ECC5C  38 60 00 01 */	li r3, 1
 
-.global sub_100ECC60
-sub_100ECC60:
+# fake split (inside .TryCreateObject__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100ECC60:
 /* 100ECC60 000ECC60  38 C0 FF FF */	li r6, -1
 /* 100ECC64 000ECC64  48 00 00 24 */	b lbl_100ECC88
 lbl_100ECC68:
@@ -11140,8 +11140,8 @@ lbl_100ECE80:
 lbl_100ECEC8:
 /* 100ECEC8 000ECEC8  38 A0 00 01 */	li r5, 1
 
-.global sub_100ECECC
-sub_100ECECC:
+# fake split (inside .TryCreateObject__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100ECECC:
 /* 100ECECC 000ECECC  38 E0 FF FF */	li r7, -1
 /* 100ECED0 000ECED0  48 00 00 24 */	b lbl_100ECEF4
 lbl_100ECED4:
@@ -11783,8 +11783,8 @@ lbl_100ED7B0:
 lbl_100ED820:
 /* 100ED820 000ED820  38 E0 00 01 */	li r7, 1
 
-.global sub_100ED824
-sub_100ED824:
+# fake split (inside .TryBurn__8cXObjectFP9StackElemP10XPrimParam)
+lbl_100ED824:
 /* 100ED824 000ED824  39 00 FF FF */	li r8, -1
 /* 100ED828 000ED828  48 00 00 24 */	b lbl_100ED84C
 lbl_100ED82C:

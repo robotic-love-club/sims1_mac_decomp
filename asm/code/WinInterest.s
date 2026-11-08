@@ -19,8 +19,8 @@
 /* 103FCCAC 003FCCAC  7C 69 03 A6 */	mtctr r3
 /* 103FCCB0 003FCCB0  4E 80 04 20 */	bctr 
 
-.global sub_103FCCB4
-sub_103FCCB4:
+# fake split (inside .SetInterest__12cWinInterestFP8cXPerson)
+lbl_103FCCB4:
 /* 103FCCB4 003FCCB4  3C 60 51 EC */	lis r3, 0x51ec
 /* 103FCCB8 003FCCB8  A8 04 05 E8 */	lha r0, 0x5e8(r4)
 /* 103FCCBC 003FCCBC  38 63 85 1F */	addi r3, r3, -31457

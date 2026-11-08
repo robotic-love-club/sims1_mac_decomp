@@ -3968,8 +3968,8 @@ lbl_10201CE8:
 /* 10201D6C 00201D6C  7C A9 03 A6 */	mtctr r5
 /* 10201D70 00201D70  4E 80 04 20 */	bctr 
 
-.global sub_10201D74
-sub_10201D74:
+# fake split (inside .TestArchTool__7ProductFi)
+lbl_10201D74:
 /* 10201D74 00201D74  38 60 00 00 */	li r3, 0
 /* 10201D78 00201D78  48 00 00 B0 */	b lbl_10201E28
 lbl_10201D7C:

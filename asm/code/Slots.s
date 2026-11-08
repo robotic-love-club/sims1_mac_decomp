@@ -683,8 +683,8 @@ lbl_10132C9C:
 /* 10132D7C 00132D7C  7C A9 03 A6 */	mtctr r5
 /* 10132D80 00132D80  4E 80 04 20 */	bctr 
 
-.global sub_10132D84
-sub_10132D84:
+# fake split (inside .SetHeight__10ObjectSlotF9StdHeight)
+lbl_10132D84:
 /* 10132D84 00132D84  C0 26 00 04 */	lfs f1, 4(r6)
 /* 10132D88 00132D88  C0 03 00 08 */	lfs f0, 8(r3)
 /* 10132D8C 00132D8C  FC 01 00 00 */	fcmpu cr0, f1, f0

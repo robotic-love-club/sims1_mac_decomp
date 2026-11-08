@@ -1868,8 +1868,8 @@ lbl_104674DC:
 /* 10467570 00467570  7C A9 03 A6 */	mtctr r5
 /* 10467574 00467574  4E 80 04 20 */	bctr 
 
-.global sub_10467578
-sub_10467578:
+# fake split (inside .EvictModeBtnHandler__18cWinNeighborhoodVCFi)
+lbl_10467578:
 /* 10467578 00467578  38 80 00 00 */	li r4, 0
 /* 1046757C 0046757C  4B FF F9 65 */	bl "SetMode__18cWinNeighborhoodVCFQ216cWinNeighborhood4Mode"
 /* 10467580 00467580  38 7E 00 00 */	addi r3, r30, 0
@@ -2787,8 +2787,8 @@ lbl_104682BC:
 /* 1046837C 0046837C  7C A9 03 A6 */	mtctr r5
 /* 10468380 00468380  4E 80 04 20 */	bctr 
 
-.global sub_10468384
-sub_10468384:
+# fake split (inside .RegularModeBtnHandler__18cWinNeighborhoodVCFi)
+lbl_10468384:
 /* 10468384 00468384  88 02 1F F1 */	lbz r0, lbl_105C3451-_R2_BASE_(r2)
 /* 10468388 00468388  28 00 00 00 */	cmplwi r0, 0
 /* 1046838C 0046838C  40 82 05 F4 */	bne lbl_10468980
@@ -5665,7 +5665,7 @@ lbl_1046B088:
 /* 1046B08C 0046B08C  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 1046B090 0046B090  7C 00 07 74 */	extsb r0, r0
 /* 1046B094 0046B094  28 00 00 0F */	cmplwi r0, 0xf
-/* 1046B098 0046B098  41 81 00 48 */	bgt sub_1046B0E0
+/* 1046B098 0046B098  41 81 00 48 */	bgt lbl_1046B0E0
 /* 1046B09C 0046B09C  80 62 B9 10 */	lwz r3, lbl_105BCD70-_R2_BASE_(r2)
 /* 1046B0A0 0046B0A0  54 00 10 3A */	slwi r0, r0, 2
 /* 1046B0A4 0046B0A4  7C 63 00 2E */	lwzx r3, r3, r0
@@ -5688,8 +5688,8 @@ lbl_1046B0D4:
 /* 1046B0D8 0046B0D8  90 1B 00 10 */	stw r0, 0x10(r27)
 /* 1046B0DC 0046B0DC  48 00 00 0C */	b lbl_1046B0E8
 
-.global sub_1046B0E0
-sub_1046B0E0:
+# fake split (inside .Init__18cWinNeighborhoodVCFv)
+lbl_1046B0E0:
 /* 1046B0E0 0046B0E0  38 00 14 C3 */	li r0, 0x14c3
 /* 1046B0E4 0046B0E4  90 1B 00 10 */	stw r0, 0x10(r27)
 lbl_1046B0E8:
@@ -5884,7 +5884,7 @@ lbl_1046B3A0:
 /* 1046B3B4 0046B3B4  88 03 00 64 */	lbz r0, 0x64(r3)
 /* 1046B3B8 0046B3B8  7C 00 07 74 */	extsb r0, r0
 /* 1046B3BC 0046B3BC  28 00 00 0F */	cmplwi r0, 0xf
-/* 1046B3C0 0046B3C0  41 81 00 A8 */	bgt sub_1046B468
+/* 1046B3C0 0046B3C0  41 81 00 A8 */	bgt lbl_1046B468
 /* 1046B3C4 0046B3C4  80 62 B9 0C */	lwz r3, lbl_105BCD6C-_R2_BASE_(r2)
 /* 1046B3C8 0046B3C8  54 00 10 3A */	slwi r0, r0, 2
 /* 1046B3CC 0046B3CC  7C 63 00 2E */	lwzx r3, r3, r0
@@ -5931,8 +5931,8 @@ lbl_1046B444:
 /* 1046B460 0046B460  90 1C 00 24 */	stw r0, 0x24(r28)
 /* 1046B464 0046B464  48 00 00 24 */	b lbl_1046B488
 
-.global sub_1046B468
-sub_1046B468:
+# fake split (inside .Init__18cWinNeighborhoodVCFv)
+lbl_1046B468:
 /* 1046B468 0046B468  38 00 14 C3 */	li r0, 0x14c3
 /* 1046B46C 0046B46C  38 80 15 2D */	li r4, 0x152d
 /* 1046B470 0046B470  90 1B 00 10 */	stw r0, 0x10(r27)

@@ -55,8 +55,8 @@ lbl_102D8558:
 /* 102D8584 002D8584  7C 89 03 A6 */	mtctr r4
 /* 102D8588 002D8588  4E 80 04 20 */	bctr 
 
-.global sub_102D858C
-sub_102D858C:
+# fake split (inside .GetObjectData__10cAudioInfoFlQ210cAudioInfo7DataIdx)
+lbl_102D858C:
 /* 102D858C 002D858C  28 03 00 00 */	cmplwi r3, 0
 /* 102D8590 002D8590  41 82 00 3C */	beq lbl_102D85CC
 /* 102D8594 002D8594  A8 83 06 20 */	lha r4, 0x620(r3)

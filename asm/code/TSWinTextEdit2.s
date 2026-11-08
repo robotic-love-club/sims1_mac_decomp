@@ -3743,8 +3743,8 @@ lbl_1052A334:
 /* 1052A514 0052A514  7C C9 03 A6 */	mtctr r6
 /* 1052A518 0052A518  4E 80 04 20 */	bctr 
 
-.global sub_1052A51C
-sub_1052A51C:
+# fake split (inside .TSOnKeyDown__15cTSWinTextEdit2FUlUl)
+lbl_1052A51C:
 /* 1052A51C 0052A51C  38 80 FF FF */	li r4, -1
 /* 1052A520 0052A520  4B FF EB C1 */	bl "DeleteText__15cTSWinTextEdit2Fi"
 /* 1052A524 0052A524  48 00 02 98 */	b lbl_1052A7BC

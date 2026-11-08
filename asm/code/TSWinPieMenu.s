@@ -2262,8 +2262,8 @@ lbl_10520688:
 /* 105206A8 005206A8  7C A9 03 A6 */	mtctr r5
 /* 105206AC 005206AC  4E 80 04 20 */	bctr 
 
-.global sub_105206B0
-sub_105206B0:
+# fake split (inside .Layout__10cTSPieMenuFv)
+lbl_105206B0:
 /* 105206B0 005206B0  56 63 0F FE */	srwi r3, r19, 0x1f
 /* 105206B4 005206B4  80 1A 01 74 */	lwz r0, 0x174(r26)
 /* 105206B8 005206B8  7C 63 9A 14 */	add r3, r3, r19

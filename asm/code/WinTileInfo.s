@@ -902,8 +902,8 @@ lbl_102A7468:
 /* 102A74B8 002A74B8  7C 69 03 A6 */	mtctr r3
 /* 102A74BC 002A74BC  4E 80 04 20 */	bctr 
 
-.global sub_102A74C0
-sub_102A74C0:
+# fake split (inside .SetTile__12cWinTileInfoFRC8cTSPointb)
+lbl_102A74C0:
 /* 102A74C0 002A74C0  38 71 00 00 */	addi r3, r17, 0
 /* 102A74C4 002A74C4  38 99 03 05 */	addi r4, r25, 0x305
 /* 102A74C8 002A74C8  4B D9 10 F9 */	bl "__ls<Q23std14char_traits<c>>__3stdFRQ23std39basic_ostream<c,Q23std14char_traits<c>>PCc_RQ23std39basic_ostream<c,Q23std14char_traits<c>>"

@@ -742,8 +742,8 @@ lbl_104EABE4:
 /* 104EAC18 004EAC18  3B 9C 00 08 */	addi r28, r28, 8
 /* 104EAC1C 004EAC1C  48 00 00 18 */	b lbl_104EAC34
 
-.global sub_104EAC20
-sub_104EAC20:
+# fake split (inside .SprintfV__9cTSStringFPCcPc)
+lbl_104EAC20:
 /* 104EAC20 004EAC20  81 9F 00 00 */	lwz r12, 0(r31)
 /* 104EAC24 004EAC24  7E 23 8B 78 */	mr r3, r17
 /* 104EAC28 004EAC28  48 0A EF 29 */	bl func_10599B50
@@ -922,8 +922,8 @@ lbl_104EAE84:
 /* 104EAE88 004EAE88  90 01 00 40 */	stw r0, 0x40(r1)
 /* 104EAE8C 004EAE8C  48 00 00 68 */	b lbl_104EAEF4
 
-.global sub_104EAE90
-sub_104EAE90:
+# fake split (inside .SprintfV__9cTSStringFPCcPc)
+lbl_104EAE90:
 /* 104EAE90 004EAE90  7C 19 AA 14 */	add r0, r25, r21
 /* 104EAE94 004EAE94  38 61 00 40 */	addi r3, r1, 0x40
 /* 104EAE98 004EAE98  38 80 00 80 */	li r4, 0x80

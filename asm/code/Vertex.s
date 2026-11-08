@@ -72,8 +72,8 @@ lbl_102B0D10:
 /* 102B0D30 002B0D30  7C 69 03 A6 */	mtctr r3
 /* 102B0D34 002B0D34  4E 80 04 20 */	bctr 
 
-.global sub_102B0D38
-sub_102B0D38:
+# fake split (inside .SetIconic__6VertexFiiiP4Wallb)
+lbl_102B0D38:
 /* 102B0D38 002B0D38  93 FE 00 10 */	stw r31, 0x10(r30)
 /* 102B0D3C 002B0D3C  88 7E 00 08 */	lbz r3, 8(r30)
 /* 102B0D40 002B0D40  80 02 FC 20 */	lwz r0, lbl_105C1080-_R2_BASE_(r2)
@@ -139,8 +139,8 @@ lbl_102B0DF8:
 /* 102B0E10 002B0E10  7C 69 03 A6 */	mtctr r3
 /* 102B0E14 002B0E14  4E 80 04 20 */	bctr 
 
-.global sub_102B0E18
-sub_102B0E18:
+# fake split (inside .SetIconic__6VertexFiiiP4Wallb)
+lbl_102B0E18:
 /* 102B0E18 002B0E18  93 FE 00 18 */	stw r31, 0x18(r30)
 /* 102B0E1C 002B0E1C  88 7E 00 08 */	lbz r3, 8(r30)
 /* 102B0E20 002B0E20  80 02 FC 40 */	lwz r0, lbl_105C10A0-_R2_BASE_(r2)

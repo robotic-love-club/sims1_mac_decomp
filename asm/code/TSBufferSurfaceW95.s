@@ -1141,8 +1141,8 @@ lbl_1048763C:
 /* 10487660 00487660  7C 69 03 A6 */	mtctr r3
 /* 10487664 00487664  4E 80 04 20 */	bctr 
 
-.global sub_10487668
-sub_10487668:
+# fake split (inside .SetActualDDColorInfo__26cTSBufferColorSurfaceW95DXFR18cTSBufferColorTypeR14_DDPIXELFORMAT)
+lbl_10487668:
 /* 10487668 00487668  38 00 00 02 */	li r0, 2
 /* 1048766C 0048766C  38 61 00 40 */	addi r3, r1, 0x40
 /* 10487670 00487670  90 01 00 40 */	stw r0, 0x40(r1)

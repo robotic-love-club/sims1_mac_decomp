@@ -2736,8 +2736,8 @@ lbl_101A6DD4:
 /* 101A6DD4 001A6DD4  3B C0 00 02 */	li r30, 2
 /* 101A6DD8 001A6DD8  48 00 00 08 */	b lbl_101A6DE0
 
-.global sub_101A6DDC
-sub_101A6DDC:
+# fake split (inside .FromResName__9FloorDataFRC15StackString<64>)
+lbl_101A6DDC:
 /* 101A6DDC 001A6DDC  3B C0 00 03 */	li r30, 3
 lbl_101A6DE0:
 /* 101A6DE0 001A6DE0  7F 43 D3 78 */	mr r3, r26

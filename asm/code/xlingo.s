@@ -401,8 +401,8 @@ lbl_1015D5EC:
 /* 1015D684 0015D684  7C A9 03 A6 */	mtctr r5
 /* 1015D688 0015D688  4E 80 04 20 */	bctr 
 
-.global sub_1015D68C
-sub_1015D68C:
+# fake split (inside .IsSingleExit__8XObjLangFPC12BehaviorNode)
+lbl_1015D68C:
 /* 1015D68C 0015D68C  38 60 00 01 */	li r3, 1
 /* 1015D690 0015D690  4E 80 00 20 */	blr 
 lbl_1015D694:
@@ -416,8 +416,8 @@ lbl_1015D694:
 /* 1015D6B0 0015D6B0  7C 69 03 A6 */	mtctr r3
 /* 1015D6B4 0015D6B4  4E 80 04 20 */	bctr 
 
-.global sub_1015D6B8
-sub_1015D6B8:
+# fake split (inside .IsSingleExit__8XObjLangFPC12BehaviorNode)
+lbl_1015D6B8:
 /* 1015D6B8 0015D6B8  38 00 00 01 */	li r0, 1
 /* 1015D6BC 0015D6BC  48 00 00 08 */	b lbl_1015D6C4
 lbl_1015D6C0:
@@ -1031,8 +1031,8 @@ lbl_1015DF70:
 /* 1015DF80 0015DF80  48 00 1B F1 */	bl "CatDialogParam__FRC11DialogParamP11ObjSelectorR12StringBuffers"
 /* 1015DF84 0015DF84  48 00 08 04 */	b lbl_1015E788
 
-.global sub_1015DF88
-sub_1015DF88:
+# fake split (inside .CatNodeParamText__8XObjLangFP8BehaviorR12BehaviorNodeR12StringBuffers)
+lbl_1015DF88:
 /* 1015DF88 0015DF88  83 03 00 04 */	lwz r24, 4(r3)
 /* 1015DF8C 0015DF8C  38 7F 00 00 */	addi r3, r31, 0
 /* 1015DF90 0015DF90  38 80 00 28 */	li r4, 0x28
@@ -1626,8 +1626,8 @@ lbl_1015E844:
 /* 1015E868 0015E868  7C 69 03 A6 */	mtctr r3
 /* 1015E86C 0015E86C  4E 80 04 20 */	bctr 
 
-.global sub_1015E870
-sub_1015E870:
+# fake split (inside .CatManageInventoryParam__FRC20ManageInventoryParamP11ObjSelectorR12StringBuffer)
+lbl_1015E870:
 /* 1015E870 0015E870  38 7E 00 00 */	addi r3, r30, 0
 /* 1015E874 0015E874  38 9F 01 D2 */	addi r4, r31, 0x1d2
 /* 1015E878 0015E878  38 A0 FF FF */	li r5, -1
@@ -1689,8 +1689,8 @@ lbl_1015E91C:
 /* 1015E934 0015E934  7C 69 03 A6 */	mtctr r3
 /* 1015E938 0015E938  4E 80 04 20 */	bctr 
 
-.global sub_1015E93C
-sub_1015E93C:
+# fake split (inside .CatManageInventoryParam__FRC20ManageInventoryParamP11ObjSelectorR12StringBuffer)
+lbl_1015E93C:
 /* 1015E93C 0015E93C  38 7E 00 00 */	addi r3, r30, 0
 /* 1015E940 0015E940  38 9F 02 BE */	addi r4, r31, 0x2be
 /* 1015E944 0015E944  38 A0 FF FF */	li r5, -1
@@ -1872,8 +1872,8 @@ lbl_1015EB58:
 /* 1015EBA0 0015EBA0  7C 69 03 A6 */	mtctr r3
 /* 1015EBA4 0015EBA4  4E 80 04 20 */	bctr 
 
-.global sub_1015EBA8
-sub_1015EBA8:
+# fake split (inside .CatManageInventoryParam__FRC20ManageInventoryParamP11ObjSelectorR12StringBuffer)
+lbl_1015EBA8:
 /* 1015EBA8 0015EBA8  38 80 00 00 */	li r4, 0
 /* 1015EBAC 0015EBAC  48 00 00 20 */	b lbl_1015EBCC
 lbl_1015EBB0:
@@ -2828,8 +2828,8 @@ lbl_1015FBE4:
 /* 1015FBF0 0015FBF0  4B FD 97 B1 */	bl "append__12StringBufferFPCci"
 /* 1015FBF4 0015FBF4  48 00 00 F8 */	b lbl_1015FCEC
 
-.global sub_1015FBF8
-sub_1015FBF8:
+# fake split (inside .CatDialogParam__FRC11DialogParamP11ObjSelectorR12StringBuffers)
+lbl_1015FBF8:
 /* 1015FBF8 0015FBF8  38 7B 00 00 */	addi r3, r27, 0
 /* 1015FBFC 0015FBFC  38 9D 04 F2 */	addi r4, r29, 0x4f2
 /* 1015FC00 0015FC00  38 A0 FF FF */	li r5, -1
@@ -4842,8 +4842,8 @@ lbl_10161CF8:
 /* 10161CF8 00161CF8  3B 80 00 C8 */	li r28, 0xc8
 /* 10161CFC 00161CFC  48 00 02 AC */	b lbl_10161FA8
 
-.global sub_10161D00
-sub_10161D00:
+# fake split (inside .CatODPair__FP8BehaviorssR12StringBuffers)
+lbl_10161D00:
 /* 10161D00 00161D00  38 76 00 00 */	addi r3, r22, 0
 /* 10161D04 00161D04  3B 80 01 00 */	li r28, 0x100
 /* 10161D08 00161D08  4B ED 60 99 */	bl "GetPrivFile__8BehaviorFv"
@@ -5442,8 +5442,8 @@ lbl_1016255C:
 /* 101625D8 001625D8  7C 69 03 A6 */	mtctr r3
 /* 101625DC 001625DC  4E 80 04 20 */	bctr 
 
-.global sub_101625E0
-sub_101625E0:
+# fake split (inside .SwizzleParam__8XObjLangFsP17BehaviorNodeParam)
+lbl_101625E0:
 /* 101625E0 001625E0  7C 00 26 2C */	lhbrx r0, 0, r4
 /* 101625E4 001625E4  B0 04 00 00 */	sth r0, 0(r4)
 /* 101625E8 001625E8  4E 80 00 20 */	blr 

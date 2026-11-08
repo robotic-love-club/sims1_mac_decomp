@@ -792,8 +792,8 @@ lbl_102045FC:
 /* 10204658 00204658  7C A9 03 A6 */	mtctr r5
 /* 1020465C 0020465C  4E 80 04 20 */	bctr 
 
-.global sub_10204660
-sub_10204660:
+# fake split (inside .ShopSetCatalogPage__7CPStateFi)
+lbl_10204660:
 /* 10204660 00204660  80 A3 00 98 */	lwz r5, 0x98(r3)
 /* 10204664 00204664  80 03 00 9C */	lwz r0, 0x9c(r3)
 /* 10204668 00204668  54 A5 28 34 */	slwi r5, r5, 5
@@ -1743,8 +1743,8 @@ lbl_10205940:
 /* 10205964 00205964  7C 89 03 A6 */	mtctr r4
 /* 10205968 00205968  4E 80 04 20 */	bctr 
 
-.global sub_1020596C
-sub_1020596C:
+# fake split (inside .UpdateShopItem__7CPStateFv)
+lbl_1020596C:
 /* 1020596C 0020596C  80 83 00 98 */	lwz r4, 0x98(r3)
 /* 10205970 00205970  80 03 00 9C */	lwz r0, 0x9c(r3)
 /* 10205974 00205974  54 84 28 34 */	slwi r4, r4, 5
@@ -2205,8 +2205,8 @@ lbl_1020619C:
 /* 102061BC 002061BC  7C 69 03 A6 */	mtctr r3
 /* 102061C0 002061C0  4E 80 04 20 */	bctr 
 
-.global sub_102061C4
-sub_102061C4:
+# fake split (inside .ArchSetCurrentTool__7CPStateFQ27CPState9ArchTools)
+lbl_102061C4:
 /* 102061C4 002061C4  88 1C 00 00 */	lbz r0, 0(r28)
 /* 102061C8 002061C8  28 00 00 00 */	cmplwi r0, 0
 /* 102061CC 002061CC  41 82 00 34 */	beq lbl_10206200

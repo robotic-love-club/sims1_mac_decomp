@@ -339,7 +339,7 @@ lbl_102D0394:
 /* 102D0400 002D0400  3B 83 00 00 */	addi r28, r3, 0
 /* 102D0404 002D0404  90 01 00 08 */	stw r0, 8(r1)
 /* 102D0408 002D0408  94 21 FF B0 */	stwu r1, -0x50(r1)
-/* 102D040C 002D040C  41 81 01 6C */	bgt sub_102D0578
+/* 102D040C 002D040C  41 81 01 6C */	bgt lbl_102D0578
 /* 102D0410 002D0410  80 82 B3 14 */	lwz r4, lbl_105BC774-_R2_BASE_(r2)
 /* 102D0414 002D0414  57 A0 10 3A */	slwi r0, r29, 2
 /* 102D0418 002D0418  7C 84 00 2E */	lwzx r4, r4, r0
@@ -443,8 +443,8 @@ lbl_102D056C:
 /* 102D0570 002D0570  4B FF FB 31 */	bl "HandleButton__14cWinPickFamilyFi"
 /* 102D0574 002D0574  48 00 00 18 */	b lbl_102D058C
 
-.global sub_102D0578
-sub_102D0578:
+# fake split (inside .TSOnCommand__14cWinPickFamilyFUlUl)
+lbl_102D0578:
 /* 102D0578 002D0578  38 7C 00 00 */	addi r3, r28, 0
 /* 102D057C 002D057C  38 9D 00 00 */	addi r4, r29, 0
 /* 102D0580 002D0580  38 BE 00 00 */	addi r5, r30, 0

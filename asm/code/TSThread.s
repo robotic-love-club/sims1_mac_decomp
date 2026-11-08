@@ -419,8 +419,8 @@ lbl_104F81F0:
 /* 104F83FC 004F83FC  7C 69 03 A6 */	mtctr r3
 /* 104F8400 004F8400  4E 80 04 20 */	bctr 
 
-.global sub_104F8404
-sub_104F8404:
+# fake split (inside .GetPriority__9cTSThreadFv)
+lbl_104F8404:
 /* 104F8404 004F8404  38 60 00 00 */	li r3, 0
 /* 104F8408 004F8408  48 00 00 38 */	b lbl_104F8440
 lbl_104F840C:

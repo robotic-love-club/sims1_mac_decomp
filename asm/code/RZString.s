@@ -467,8 +467,8 @@ lbl_105372E8:
 /* 105372FC 005372FC  7C AD 1A 14 */	add r5, r13, r3
 /* 10537300 00537300  48 00 00 20 */	b lbl_10537320
 
-.global sub_10537304
-sub_10537304:
+# fake split (inside .Sprintf__9cRZStringFPCce)
+lbl_10537304:
 /* 10537304 00537304  80 61 00 EC */	lwz r3, 0xec(r1)
 /* 10537308 00537308  38 03 FF FF */	addi r0, r3, -1
 /* 1053730C 0053730C  90 01 00 EC */	stw r0, 0xec(r1)

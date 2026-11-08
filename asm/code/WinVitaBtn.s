@@ -555,8 +555,8 @@ lbl_102D1FE0:
 /* 102D1FF8 002D1FF8  7C 89 03 A6 */	mtctr r4
 /* 102D1FFC 002D1FFC  4E 80 04 20 */	bctr 
 
-.global sub_102D2000
-sub_102D2000:
+# fake split (inside .GetCurrentSuitIndex__15cWinVitaBtnSoloFv)
+lbl_102D2000:
 /* 102D2000 002D2000  7C A3 2B 78 */	mr r3, r5
 /* 102D2004 002D2004  4B D8 FF 6D */	bl "GetBodySuit__10EditPersonFv"
 /* 102D2008 002D2008  48 00 00 44 */	b lbl_102D204C
@@ -640,8 +640,8 @@ lbl_102D204C:
 /* 102D219C 002D219C  7C 69 03 A6 */	mtctr r3
 /* 102D21A0 002D21A0  4E 80 04 20 */	bctr 
 
-.global sub_102D21A4
-sub_102D21A4:
+# fake split (inside .PreviousSuit__15cWinVitaBtnSoloFv)
+lbl_102D21A4:
 /* 102D21A4 002D21A4  80 7E 01 9C */	lwz r3, 0x19c(r30)
 /* 102D21A8 002D21A8  38 80 00 01 */	li r4, 1
 /* 102D21AC 002D21AC  4B D8 F5 E5 */	bl "SetToPreviousValidBodySuitForBodyType__10EditPersonFb"
@@ -720,8 +720,8 @@ lbl_102D2234:
 /* 102D22DC 002D22DC  7C 69 03 A6 */	mtctr r3
 /* 102D22E0 002D22E0  4E 80 04 20 */	bctr 
 
-.global sub_102D22E4
-sub_102D22E4:
+# fake split (inside .NextSuit__15cWinVitaBtnSoloFv)
+lbl_102D22E4:
 /* 102D22E4 002D22E4  80 7E 01 9C */	lwz r3, 0x19c(r30)
 /* 102D22E8 002D22E8  38 80 00 01 */	li r4, 1
 /* 102D22EC 002D22EC  4B D8 F8 15 */	bl "SetToNextValidBodySuitForBodyType__10EditPersonFb"

@@ -4973,8 +4973,8 @@ lbl_1020EDDC:
 /* 1020EDF8 0020EDF8  7C 89 03 A6 */	mtctr r4
 /* 1020EDFC 0020EDFC  4E 80 04 20 */	bctr 
 
-.global sub_1020EE00
-sub_1020EE00:
+# fake split (inside .TSOnKeyDown__12cDDDSimsViewFUlUl)
+lbl_1020EE00:
 /* 1020EE00 0020EE00  38 80 00 01 */	li r4, 1
 /* 1020EE04 0020EE04  4B FF 6D 2D */	bl "ShopSetSort__7CPStateFQ27CPState14NewCatalogSort"
 /* 1020EE08 0020EE08  48 00 00 48 */	b lbl_1020EE50

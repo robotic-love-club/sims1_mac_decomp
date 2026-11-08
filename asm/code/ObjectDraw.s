@@ -914,8 +914,8 @@ lbl_100C5FF0:
 /* 100C6040 000C6040  7C 69 03 A6 */	mtctr r3
 /* 100C6044 000C6044  4E 80 04 20 */	bctr 
 
-.global sub_100C6048
-sub_100C6048:
+# fake split (inside .BuildIconMTDrawOrder__FP11ObjSelectoriiRQ23std42vector<6MTIcon,Q23std18allocator<6MTIcon>>)
+lbl_100C6048:
 /* 100C6048 000C6048  39 05 00 00 */	addi r8, r5, 0
 /* 100C604C 000C604C  38 E4 00 00 */	addi r7, r4, 0
 /* 100C6050 000C6050  48 00 00 24 */	b lbl_100C6074
@@ -1627,8 +1627,8 @@ lbl_100C6BC0:
 /* 100C6C10 000C6C10  7C 69 03 A6 */	mtctr r3
 /* 100C6C14 000C6C14  4E 80 04 20 */	bctr 
 
-.global sub_100C6C18
-sub_100C6C18:
+# fake split (inside .DrawObjectSlot__8cXObjectFP11RenderParamP10ObjectSlot)
+lbl_100C6C18:
 /* 100C6C18 000C6C18  FC 80 10 90 */	fmr f4, f2
 /* 100C6C1C 000C6C1C  FC 60 08 90 */	fmr f3, f1
 /* 100C6C20 000C6C20  48 00 00 24 */	b lbl_100C6C44
@@ -2165,8 +2165,8 @@ lbl_100C73C8:
 /* 100C7400 000C7400  7C 69 03 A6 */	mtctr r3
 /* 100C7404 000C7404  4E 80 04 20 */	bctr 
 
-.global sub_100C7408
-sub_100C7408:
+# fake split (inside .DrawIso__8cXObjectFP11RenderParam)
+lbl_100C7408:
 /* 100C7408 000C7408  FC 60 08 90 */	fmr f3, f1
 /* 100C740C 000C740C  FC 40 00 90 */	fmr f2, f0
 /* 100C7410 000C7410  48 00 00 24 */	b lbl_100C7434

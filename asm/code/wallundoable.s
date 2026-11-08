@@ -1366,8 +1366,8 @@ lbl_1018E99C:
 /* 1018E9B0 0018E9B0  7C 69 03 A6 */	mtctr r3
 /* 1018E9B4 0018E9B4  4E 80 04 20 */	bctr 
 
-.global sub_1018E9B8
-sub_1018E9B8:
+# fake split (inside .DoRectangle__12WallUndoableFRC7CTilePtRC7CTilePtP7CTilePtP7CTilePt)
+lbl_1018E9B8:
 /* 1018E9B8 0018E9B8  3B 80 00 02 */	li r28, 2
 /* 1018E9BC 0018E9BC  48 00 00 38 */	b lbl_1018E9F4
 lbl_1018E9C0:
@@ -1416,8 +1416,8 @@ lbl_1018EA34:
 /* 1018EA48 0018EA48  7C 69 03 A6 */	mtctr r3
 /* 1018EA4C 0018EA4C  4E 80 04 20 */	bctr 
 
-.global sub_1018EA50
-sub_1018EA50:
+# fake split (inside .DoRectangle__12WallUndoableFRC7CTilePtRC7CTilePtP7CTilePtP7CTilePt)
+lbl_1018EA50:
 /* 1018EA50 0018EA50  3B 80 00 02 */	li r28, 2
 /* 1018EA54 0018EA54  48 00 00 38 */	b lbl_1018EA8C
 lbl_1018EA58:
@@ -1466,8 +1466,8 @@ lbl_1018EACC:
 /* 1018EAE0 0018EAE0  7C 69 03 A6 */	mtctr r3
 /* 1018EAE4 0018EAE4  4E 80 04 20 */	bctr 
 
-.global sub_1018EAE8
-sub_1018EAE8:
+# fake split (inside .DoRectangle__12WallUndoableFRC7CTilePtRC7CTilePtP7CTilePtP7CTilePt)
+lbl_1018EAE8:
 /* 1018EAE8 0018EAE8  3B 80 00 02 */	li r28, 2
 /* 1018EAEC 0018EAEC  48 00 00 38 */	b lbl_1018EB24
 lbl_1018EAF0:
@@ -4185,8 +4185,8 @@ lbl_101912D8:
 /* 101913F0 001913F0  7C 89 03 A6 */	mtctr r4
 /* 101913F4 001913F4  4E 80 04 20 */	bctr 
 
-.global sub_101913F8
-sub_101913F8:
+# fake split (inside .TileToVertex__12WallUndoableFRC7CTilePtQ27CTilePt3Dir)
+lbl_101913F8:
 /* 101913F8 001913F8  1C C6 00 03 */	mulli r6, r6, 3
 /* 101913FC 001913FC  88 81 FF F0 */	lbz r4, -0x10(r1)
 /* 10191400 00191400  88 01 FF F1 */	lbz r0, -0xf(r1)
@@ -4251,8 +4251,8 @@ lbl_10191488:
 /* 10191520 00191520  7C 89 03 A6 */	mtctr r4
 /* 10191524 00191524  4E 80 04 20 */	bctr 
 
-.global sub_10191528
-sub_10191528:
+# fake split (inside .VertexToTile__12WallUndoableFRC7CTilePtQ27CTilePt3Dir)
+lbl_10191528:
 /* 10191528 00191528  1C C6 00 03 */	mulli r6, r6, 3
 /* 1019152C 0019152C  88 81 FF F0 */	lbz r4, -0x10(r1)
 /* 10191530 00191530  88 01 FF F1 */	lbz r0, -0xf(r1)

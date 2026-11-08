@@ -89,8 +89,8 @@ lbl_100043E0:
 /* 100043F0 000043F0  7F FF 02 14 */	add r31, r31, r0
 /* 100043F4 000043F4  48 00 00 24 */	b lbl_10004418
 
-.global sub_100043F8
-sub_100043F8:
+# fake split (inside .MacMungeStrings__FPci)
+lbl_100043F8:
 /* 100043F8 000043F8  7C 7C FA 14 */	add r3, r28, r31
 /* 100043FC 000043FC  48 58 FA A5 */	bl func_10593EA0
 /* 10004400 00004400  7F E3 FA 14 */	add r31, r3, r31

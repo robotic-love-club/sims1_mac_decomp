@@ -787,8 +787,8 @@ lbl_1000CB24:
 /* 1000CB24 0000CB24  38 06 00 2F */	addi r0, r6, 0x2f
 /* 1000CB28 0000CB28  48 00 00 4C */	b lbl_1000CB74
 
-.global sub_1000CB2C
-sub_1000CB2C:
+# fake split (inside ._open_override__Q23std39basic_filebuf<c,Q23std14char_traits<c>>FPCcQ33std8ios_base8openmode)
+lbl_1000CB2C:
 /* 1000CB2C 0000CB2C  38 06 00 31 */	addi r0, r6, 0x31
 /* 1000CB30 0000CB30  48 00 00 44 */	b lbl_1000CB74
 lbl_1000CB34:

@@ -2162,7 +2162,7 @@ lbl_100CC3A0:
 /* 100CC3A0 000CC3A0  38 00 00 32 */	li r0, 0x32
 /* 100CC3A4 000CC3A4  28 1F 00 09 */	cmplwi r31, 9
 /* 100CC3A8 000CC3A8  90 14 00 1C */	stw r0, 0x1c(r20)
-/* 100CC3AC 000CC3AC  41 81 00 60 */	bgt sub_100CC40C
+/* 100CC3AC 000CC3AC  41 81 00 60 */	bgt lbl_100CC40C
 /* 100CC3B0 000CC3B0  80 62 A5 B8 */	lwz r3, lbl_105BBA18-_R2_BASE_(r2)
 /* 100CC3B4 000CC3B4  57 E0 10 3A */	slwi r0, r31, 2
 /* 100CC3B8 000CC3B8  7C 63 00 2E */	lwzx r3, r3, r0
@@ -2196,8 +2196,8 @@ lbl_100CC404:
 /* 100CC404 000CC404  38 00 00 0E */	li r0, 0xe
 /* 100CC408 000CC408  48 00 00 08 */	b lbl_100CC410
 
-.global sub_100CC40C
-sub_100CC40C:
+# fake split (inside .ImportConstants__12ObjectFolderFR9CTGString)
+lbl_100CC40C:
 /* 100CC40C 000CC40C  38 00 FF FF */	li r0, -1
 lbl_100CC410:
 /* 100CC410 000CC410  2C 00 00 00 */	cmpwi r0, 0
@@ -3333,8 +3333,8 @@ lbl_100CD508:
 /* 100CD568 000CD568  7C 69 03 A6 */	mtctr r3
 /* 100CD56C 000CD56C  4E 80 04 20 */	bctr 
 
-.global sub_100CD570
-sub_100CD570:
+# fake split (inside .GetGameAdFromDBImpact__Fi)
+lbl_100CD570:
 /* 100CD570 000CD570  38 60 00 03 */	li r3, 3
 /* 100CD574 000CD574  4E 80 00 20 */	blr 
 lbl_100CD578:
