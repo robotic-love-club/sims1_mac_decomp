@@ -31,4 +31,4 @@ start and demotes it to a local `lbl_` label. Reassembly is still byte-exact for
 m2c (`-t ppc-mwcc-c++`) needs two preparations on a *copy* of the asm (drafting only, not matching):
 rewrite TOC accesses `sym-_R2_BASE_(r2)` / `addi rX, r2, sym-_R2_BASE_` to `@sda21`, and run
 `jtbl.py asm/data/data.s COPYDIR TU...` to turn CFM's TOC-slot jump tables into `jtbl_` tables m2c
-can follow. With both, m2c drafts 5,993 of 5,999 functions in the sim/content/core/animation TUs.
+can follow. With both, m2c drafts 5,996 of 5,999 functions in the sim/content/core/animation TUs.

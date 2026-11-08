@@ -32,16 +32,23 @@ for tu in tus:
     for i, l in enumerate(L):
         if not l.endswith("bctr "): continue
         stats["bctr"] += 1
-        win = range(max(0, i - 24), i)
+        # anchor on data flow: lwzx rT, rB, rN ; mtctr rT ; bctr  ->  rB came from the TOC slot load
         cmp_ = slot = slot_line = None
-        for j in win:
+        base = None
+        for j in range(i - 1, max(0, i - 4), -1):
             m = addr_rx.match(L[j])
-            if not m: continue
-            ins = m.group(2)
-            mm = re.match(r"cmplwi r\d+, (\d+)", ins)
-            if mm and slot is None: cmp_ = int(mm.group(1))   # last bound check before the slot load
-            mm = re.match(r"lwz (r\d+), lbl_([0-9A-F]{8})-_R2_BASE_\(r2\)", ins)
-            if mm: slot = (mm.group(1), int(mm.group(2), 16)); slot_line = j
+            mm = m and re.match(r"lwzx r\d+, (r\d+), r\d+", m.group(2))
+            if mm: base = mm.group(1); lwzx_line = j; break
+        if base:
+            for j in range(lwzx_line - 1, max(0, lwzx_line - 24), -1):
+                m = addr_rx.match(L[j])
+                mm = m and re.match(r"lwz %s, lbl_([0-9A-F]{8})-_R2_BASE_\(r2\)" % base, m.group(2))
+                if mm: slot = (base, int(mm.group(1), 16)); slot_line = j; break
+        if slot:
+            for j in range(slot_line, max(0, slot_line - 24), -1):
+                m = addr_rx.match(L[j])
+                mm = m and re.match(r"cmplwi r\d+, (0x[0-9a-fA-F]+|\d+)", m.group(2))
+                if mm: cmp_ = int(mm.group(1), 0); break
         if cmp_ is None or slot is None:
             stats["pattern not recognised"] += 1; continue
         tbl = word.get(slot[1])
